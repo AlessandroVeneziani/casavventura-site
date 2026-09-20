@@ -1,0 +1,100 @@
+.logo {
+  width: 210px;
+  min-width: 210px;
+  padding: 10px 14px 9px;
+  border: 3px solid var(--teal);
+  border-radius: 18px;
+  background: var(--ivory);
+  box-shadow: 0 7px 0 var(--yellow);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.logo-house {
+  display: none;
+}
+
+.portrait {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.portrait::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: .28;
+  background: linear-gradient(135deg, var(--teal), transparent 55%, var(--orange));
+}
+
+.portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+  filter: saturate(1.04) contrast(1.02);
+}
+
+.portrait-alex img {
+  object-position: center 22%;
+}
+
+.portrait-bimbi img {
+  object-position: center 34%;
+}
+
+.portrait-jasper img {
+  object-position: center 26%;
+}
+
+.logo:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 0 var(--yellow);
+}
+
+.logo-wordmark {
+  display: flex;
+  flex-direction: column;
+  line-height: .76;
+  font-family: Georgia, serif;
+  letter-spacing: -1.8px;
+}
+
+.logo-wordmark strong,
+.logo-wordmark em {
+  font-size: 25px;
+}
+
+.logo-wordmark em {
+  font-style: normal;
+  color: var(--petrol);
+}
+
+.logo-wordmark small {
+  font: 800 7px/1.2 Inter, sans-serif;
+  letter-spacing: .45px;
+  color: var(--orange);
+  margin-top: 7px;
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 178px;
+    min-width: 178px;
+    padding: 8px 11px 7px;
+    border-width: 2px;
+    border-radius: 14px;
+    box-shadow: 0 5px 0 var(--yellow);
+  }
+
+  .logo-wordmark strong,
+  .logo-wordmark em {
+    font-size: 21px;
+  }
+
+  .logo-wordmark small {
+    font-size: 6px;
+    margin-top: 6px;
+  }
+}
