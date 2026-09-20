@@ -13,27 +13,42 @@
   display: none;
 }
 
+.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo.footer-logo {
+  width: 180px;
+  min-width: 180px;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.logo.footer-logo:hover {
+  box-shadow: none;
+}
+
 .portrait {
   position: relative;
   overflow: hidden;
   isolation: isolate;
+  background: transparent !important;
 }
 
 .portrait::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  opacity: .28;
-  background: linear-gradient(135deg, var(--teal), transparent 55%, var(--orange));
+  display: none !important;
 }
 
 .portrait img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 28%;
-  filter: saturate(1.04) contrast(1.02);
+  object-fit: contain;
+  object-position: center;
+  filter: none;
 }
 
 .portrait-alex img {
