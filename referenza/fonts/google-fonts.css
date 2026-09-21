@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fredoka/v17/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3O8SLMFg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fredoka/v17/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OwyLMFg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fredoka/v17/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OLyXMFg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fredoka/v17/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OFiXMFg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v19/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilntA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v19/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4GCC5ntA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v19/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4GMS5ntA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v19/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4GVi5ntA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Patrick Hand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/patrickhand/v25/LDI1apSQOAYtSuYWp8ZhfYeMWQ.ttf) format('truetype');
+}

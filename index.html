@@ -3,179 +3,210 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="CasAvventura: una casa, mille avventure. Missioni, storie, esperimenti e sorprese da vivere insieme." />
-    <title>CasAvventura — Una casa, mille avventure</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23005260'/%3E%3Cpath d='M13 31 32 14l19 17v20H13z' fill='none' stroke='%23fff8ed' stroke-width='5'/%3E%3Cpath d='M25 51V38h14v13M29 27h6v6h-6z' fill='%23ff641f'/%3E%3C/svg%3E" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Missioni, storie, esperimenti, animali e sorprese da vivere insieme. Benvenuti in CasAvventura: una casa dove ogni giorno può diventare un’avventura." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:title" content="CasAvventura | Una casa, mille avventure" />
+    <meta property="og:description" content="Missioni, storie, esperimenti, animali e sorprese da vivere insieme." />
+    <meta property="og:image" content="referenza/hero.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CasAvventura | Una casa, mille avventure" />
+    <meta name="twitter:description" content="Missioni, storie, esperimenti, animali e sorprese da vivere insieme." />
+    <meta name="twitter:image" content="referenza/hero.png" />
+    <title>CasAvventura | Una casa, mille avventure</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23005260'/%3E%3Cpath d='M13 31 32 14l19 17v20H13z' fill='none' stroke='%23fff' stroke-width='5'/%3E%3Cpath d='M25 51V38h14v13' fill='none' stroke='%23ff641f' stroke-width='5'/%3E%3C/svg%3E" />
+    <link rel="preload" href="referenza/hero.png" as="image" fetchpriority="high" />
+    <link rel="preload" href="referenza/fonts/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OFiXMFg.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="stylesheet" href="styles.css" />
+    <script src="site.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Vai al contenuto</a>
+
     <header class="site-header">
-      <a class="logo" href="#top" aria-label="CasAvventura, torna all'inizio">
-        <img src="public/approved/logo-approved.png" alt="CasAvventura — Una casa, mille avventure" />
-      </a>
-      <nav class="main-nav" aria-label="Navigazione principale">
-        <a href="#universo">L’universo</a>
-        <a href="#missioni">Missioni</a>
-        <a href="#chi-ci-vive">Chi ci vive</a>
-        <a href="#contenuti">Contenuti</a>
-        <a href="#entra">Entra nella Casa</a>
-      </nav>
-      <a class="button button-orange header-cta" href="#entra">Unisciti all’avventura <span>→</span></a>
-      <span class="search-mark" aria-hidden="true"></span>
+      <div class="header-inner container">
+        <a class="brand" href="#top" aria-label="CasAvventura, pagina iniziale">
+          <img src="public/approved/logo-approved.png" alt="CasAvventura — Una casa, mille avventure" width="157" height="92" />
+        </a>
+
+        <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="menu-toggle-lines" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="visually-hidden">Apri il menu</span>
+        </button>
+
+        <nav class="main-nav" id="primary-navigation" aria-label="Navigazione principale">
+          <a href="#universo">L’universo</a>
+          <a href="#missioni">Missioni</a>
+          <a href="#chi-ci-vive">Chi ci vive</a>
+          <a href="#contenuti">Contenuti</a>
+          <a href="#entra">Entra nella Casa</a>
+        </nav>
+
+        <a class="button button-primary header-cta" href="#entra">Unisciti all’avventura <span aria-hidden="true">→</span></a>
+      </div>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="hand-note hero-hand">Avventure<br />nella vita<br />di tutti i giorni!</p>
-          <h1 id="hero-title">Una casa,<br /><strong>mille avventure.</strong></h1>
-          <h2>Missioni, storie, esperimenti e sorprese da vivere insieme.</h2>
-          <div class="hero-actions">
-            <a class="button button-orange" href="#missioni">Scopri CasAvventura <span>→</span></a>
-            <a class="button button-outline" href="#missioni"><span class="play">▶</span> Guarda le missioni</a>
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-inner container">
+          <div class="hero-copy">
+            <p class="hero-note">Avventure<br />nella vita<br />di tutti i giorni!</p>
+            <h1 id="hero-title" aria-label="Una casa, mille avventure.">Una casa,<br /> <span>mille avventure.</span></h1>
+            <p class="hero-summary">Missioni, storie, esperimenti e sorprese<br class="desktop-break" /> da vivere insieme.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#universo">Scopri CasAvventura <span aria-hidden="true">→</span></a>
+              <a class="button button-secondary" href="https://www.youtube.com/playlist?list=PLPsmUCACW2MM" target="_blank" rel="noopener noreferrer">
+                <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M10 7.5 17 12l-7 4.5z" fill="#fff"/></svg>
+                Guarda le missioni
+              </a>
+            </div>
+            <div class="values" aria-label="I valori di CasAvventura">
+              <div class="value-item"><img src="referenza/zampa.png" alt="" width="1254" height="1254" /><span>Famiglia</span></div>
+              <div class="value-item"><img src="referenza/lampadina.png" alt="" width="1254" height="1254" /><span>Curiosità</span></div>
+              <div class="value-item"><img src="public/icons/avventura.svg" alt="" width="64" height="64" /><span>Avventura</span></div>
+              <div class="value-item"><img src="referenza/cuore.png" alt="" width="1254" height="1254" /><span>Tanto divertimento</span></div>
+            </div>
           </div>
-          <div class="values" aria-label="I valori di CasAvventura">
-            <div><img src="public/icons/famiglia.svg" alt="" /><span>Famiglia</span></div>
-            <div><img src="public/icons/curiosita.svg" alt="" /><span>Curiosità</span></div>
-            <div><img src="public/icons/avventura.svg" alt="" /><span>Avventura</span></div>
-            <div><img src="public/icons/divertimento.svg" alt="" /><span>Tanto divertimento</span></div>
+          <div class="hero-art">
+            <img src="referenza/hero.png" alt="Alex, Bimbi del Rio con collare rosa e targhetta a forma di cane, e Gatto Jasper esplorano una mappa con una busta sigillata, una bussola e una lente." width="1448" height="1086" fetchpriority="high" />
           </div>
         </div>
-        <div class="hero-art">
-          <img src="public/approved/hero-visual-approved.png" alt="Alex, Bimbi del Rio e Gatto Jasper tra mappe, libri e indizi" />
-          <p class="chalk-note">QUI<br />OGNI GIORNO<br />È UNA NUOVA<br />AVVENTURA ♡</p>
-          <p class="sticky-note">STESSA<br />SQUADRA<br />MILLE<br />AVVENTURE! ♡</p>
-          <p class="mug-note">GOOD<br />IDEAS<br />LIVE HERE</p>
+      </section>
+
+      <section class="welcome section-space" id="universo" aria-labelledby="welcome-title">
+        <div class="welcome-inner container">
+          <div class="welcome-paper">
+            <img src="referenza/pergamena.png" alt="" width="1448" height="1086" loading="lazy" />
+            <p>Qui la vita di tutti i giorni si trasforma in qualcosa di straordinario. Una casa, tre amici, mille idee, esperimenti, storie e misteri da risolvere. Sei pronto a entrare anche tu?</p>
+          </div>
+          <div class="welcome-copy">
+            <h2 id="welcome-title">Una casa normale?<br /><span>Solo all’apparenza!</span></h2>
+            <p>Dentro queste mura si nascondono indizi, esperimenti strampalati, storie incredibili e tante missioni da vivere insieme.</p>
+            <p>Perché l’avventura non è lontana: inizia proprio da qui!</p>
+            <div class="house-doodle" aria-label="Stessa casa, più avventure">
+              <img src="referenza/casa.png" alt="" width="1254" height="1254" loading="lazy" />
+              <span>STESSA CASA<br />PIÙ AVVENTURE</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="welcome" id="universo">
-        <div class="paper-note">
-          <img src="public/approved/paper-note-approved.png" alt="" />
-        </div>
-        <div class="welcome-text">
-          <h2>Una casa normale?<br /><strong>Solo all’apparenza!</strong></h2>
-          <p>Dentro queste mura si nascondono indizi, esperimenti strampalati, storie incredibili e tante missioni da vivere insieme. Perché l’avventura non è lontana: inizia proprio da qui!</p>
-        </div>
-        <div class="house-doodle" aria-hidden="true">
-          <span></span>
-          <strong>STESSA CASA<br />PIÙ AVVENTURE</strong>
-        </div>
-      </section>
-
-      <section class="content-areas" id="contenuti" aria-labelledby="content-title">
-        <div class="area-grid">
-          <article class="area-card">
-            <div class="icon-burst"><img src="public/icons/missioni.svg" alt="" /></div>
-            <h3>Missioni</h3>
-            <p>Indizi, misteri e sfide da risolvere insieme. Sei pronto a mettere alla prova la tua astuzia?</p>
-            <a href="#missioni">Scopri <span>→</span></a>
+      <section class="features section-space" id="contenuti" aria-label="Cosa trovi in CasAvventura">
+        <h2 class="visually-hidden">Contenuti CasAvventura</h2>
+        <div class="feature-grid container">
+          <article class="feature-card">
+            <img class="feature-icon" src="referenza/missioni.png" alt="" width="1254" height="1254" loading="lazy" />
+            <div class="feature-copy"><h3>Missioni</h3><p>Indizi, misteri e sfide da risolvere insieme. Sei pronto a mettere alla prova la tua astuzia?</p></div>
+            <a class="feature-link" href="#missioni" aria-label="Scopri le missioni"><span>Scopri</span><b aria-hidden="true">→</b></a>
           </article>
-          <article class="area-card">
-            <div class="icon-burst"><img src="public/icons/storie.svg" alt="" /></div>
-            <h3>Storie</h3>
-            <p>Racconti, avventure e momenti di vita vera con Alex, Bimbi e Jasper. Ogni giorno una nuova storia da scoprire.</p>
-            <a href="#chi-ci-vive">Scopri <span>→</span></a>
+          <article class="feature-card">
+            <img class="feature-icon" src="referenza/libro.png" alt="" width="1254" height="1254" loading="lazy" />
+            <div class="feature-copy"><h3>Storie</h3><p>Racconti, avventure e momenti di vita vera con Alex, Bimbi e Jasper. Ogni giorno una nuova storia da scoprire.</p></div>
+            <a class="feature-link" href="#chi-ci-vive" aria-label="Scopri le storie"><span>Scopri</span><b aria-hidden="true">→</b></a>
           </article>
-          <article class="area-card">
-            <div class="icon-burst"><img src="public/icons/esperimenti.svg" alt="" /></div>
-            <h3>Esperimenti</h3>
-            <p>Scienza, curiosità e prove strampalate per capire il mondo, anche da casa. Per menti curiose di tutte le età.</p>
-            <a href="#missioni">Scopri <span>→</span></a>
+          <article class="feature-card">
+            <img class="feature-icon" src="referenza/esperimenti.png" alt="" width="1254" height="1254" loading="lazy" />
+            <div class="feature-copy"><h3>Esperimenti</h3><p>Scienza, curiosità e prove strampalate per capire il mondo, anche da casa. Per menti curiose di tutte le età.</p></div>
+            <a class="feature-link" href="#missioni" aria-label="Scopri gli esperimenti"><span>Scopri</span><b aria-hidden="true">→</b></a>
           </article>
         </div>
       </section>
 
-      <section class="characters" id="chi-ci-vive" aria-labelledby="characters-title">
-        <div class="section-heading centered">
-          <h2 id="characters-title">Chi ci vive?</h2>
-          <p>Una strana, meravigliosa famiglia.</p>
-        </div>
-        <p class="hand-note character-note">DIVERSI<br />MA PERFETTI<br />INSIEME ♡</p>
-        <div class="character-grid">
-          <article class="character-card">
-            <div class="portrait"><img src="public/approved/character-alex-approved.png" alt="Alex, il padrone di casa" /></div>
-            <h3>Alex</h3>
-            <h4>Il padrone di casa</h4>
-            <p>Curioso, creativo e sempre pronto a nuove idee. È lui che trasforma le giornate normali in avventure straordinarie.</p>
-          </article>
-          <article class="character-card">
-            <div class="portrait"><img src="public/approved/character-bimbi-approved.png" alt="Bimbi del Rio, carlino di CasAvventura" /></div>
-            <h3>Bimbi del Rio</h3>
-            <h4>Il carlino che analizza tutto</h4>
-            <p>Osserva, annusa, commenta. Con il suo sguardo unico rende ogni situazione più divertente e un po’ più complicata.</p>
-          </article>
-          <article class="character-card">
-            <div class="portrait"><img src="public/approved/character-jasper-approved.png" alt="Gatto Jasper, abitante della Casa" /></div>
-            <h3>Gatto Jasper</h3>
-            <h4>Quello che forse sa qualcosa</h4>
-            <p>Elegante, saggio e un po’ misterioso. A volte sembra accorgersi delle cose prima degli altri.</p>
-          </article>
-          <article class="character-card">
-            <div class="portrait"><img src="public/approved/character-you-approved.png" alt="" /></div>
-            <h3>Tu!</h3>
-            <h4>L’amico segreto della Casa</h4>
-            <p>Le nostre avventure sono ancora più belle con te! Segui, commenta, proponi idee e aiutaci a risolvere le prossime missioni.</p>
-          </article>
+      <section class="characters section-space" id="chi-ci-vive" aria-labelledby="characters-title">
+        <div class="container">
+          <header class="section-heading">
+            <h2 id="characters-title">Chi ci vive?</h2>
+            <p>Una strana, meravigliosa famiglia.</p>
+          </header>
+          <div class="character-grid">
+            <article class="character-card">
+              <div class="character-art"><img src="referenza/alex.png" alt="Ritratto approvato di Alex" width="1086" height="1448" loading="lazy" /></div>
+              <h3 class="visually-hidden">Alex</h3>
+              <h4>Il padrone di casa</h4>
+              <p>Curioso, creativo e sempre pronto a nuove idee. È lui che trasforma le giornate normali in avventure straordinarie.</p>
+            </article>
+            <article class="character-card">
+              <div class="character-art"><img src="referenza/bimbidelrio.png" alt="Ritratto approvato di Bimbi del Rio, con collare rosa e targhetta metallica a forma di cane" width="1086" height="1448" loading="lazy" /></div>
+              <h3 class="visually-hidden">Bimbi del Rio</h3>
+              <h4>Il carlino che analizza tutto</h4>
+              <p>Osserva, annusa, commenta. Con il suo sguardo unico rende ogni situazione più divertente e un po’ più complicata.</p>
+            </article>
+            <article class="character-card">
+              <div class="character-art"><img src="referenza/gatto%20jasper.png" alt="Ritratto approvato di Gatto Jasper" width="1086" height="1448" loading="lazy" /></div>
+              <h3 class="visually-hidden">Gatto Jasper</h3>
+              <h4>Quello che sa già come andrà</h4>
+              <p>Elegante, saggio e un po’ misterioso. A volte sembra accorgersi delle cose prima degli altri.</p>
+            </article>
+            <article class="character-card">
+              <div class="character-art"><img src="referenza/tu.png" alt="Silhouette approvata di un personaggio con punto interrogativo" width="1086" height="1448" loading="lazy" /></div>
+              <h3 class="visually-hidden">Tu!</h3>
+              <h4>L’amico segreto della Casa</h4>
+              <p>Le nostre avventure sono ancora più belle con te! Segui, commenta, proponi idee e aiutaci a risolvere le prossime missioni.</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="latest" id="missioni" aria-labelledby="latest-title">
-        <div class="latest-title">
-          <h2 id="latest-title">Le ultime missioni</h2>
-          <p>Sei pronto a metterti in gioco?</p>
-        </div>
-        <p class="hand-note latest-note">LE AVVENTURE<br />CONTINUANO...</p>
-        <div class="mission-grid">
-          <article class="mission-card">
-            <img src="public/approved/mission-envelope-approved.png" alt="" />
-            <div>
-              <span class="mission-label">MISSIONE 001</span>
-              <h3>Cosa c’è dentro?</h3>
+      <section class="missions section-space" id="missioni" aria-labelledby="missions-title">
+        <div class="container">
+          <header class="missions-heading">
+            <h2 id="missions-title">Le ultime missioni</h2>
+            <p>Sei pronto a metterti in gioco?</p>
+          </header>
+          <div class="mission-grid">
+            <article class="mission-card">
+              <img class="mission-art" src="referenza/missione1.png" alt="Illustrazione della busta misteriosa sigillata con ceralacca rossa e una bussola" width="1536" height="1024" loading="lazy" />
+              <h3 class="visually-hidden">Missione 001: Cosa c’è dentro?</h3>
               <p>Abbiamo trovato una busta misteriosa. Aiutaci a scoprire cosa nasconde.</p>
-              <a class="button button-orange small" href="#entra">Guarda la missione <span>→</span></a>
-            </div>
-          </article>
-          <article class="mission-card">
-            <img src="public/approved/mission-eggs-approved.png" alt="" />
-            <div>
-              <span class="mission-label">MISSIONE 002</span>
-              <h3>In lavorazione...</h3>
-              <p>La prossima missione sta prendendo forma.</p>
-              <a class="button button-outline small" href="#entra">Presto online</a>
-            </div>
-          </article>
+              <a class="button button-primary" href="https://www.youtube.com/playlist?list=PLPsmUCACW2MM" target="_blank" rel="noopener noreferrer">Guarda la missione <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="mission-card">
+              <img class="mission-art" src="referenza/missione2.png" alt="Illustrazione approvata della scatola beige chiusa con corda, sigillo CasAvventura, bussola e mappa" width="1448" height="1086" loading="lazy" />
+              <h3 class="visually-hidden">Missione 002: La scatola misteriosa</h3>
+              <p>Una scatola misteriosa, una mappa e nuovi indizi da scoprire insieme.</p>
+              <a class="button button-secondary" href="https://www.youtube.com/playlist?list=PLPsmUCACW2MM" target="_blank" rel="noopener noreferrer">Scopri la missione <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="join" id="entra">
-        <div class="join-inner">
-          <div>
-            <h2>Entra anche tu in CasAvventura!</h2>
-            <p>Segui le nostre avventure, unisciti alla community e aiutaci a risolvere i prossimi misteri.</p>
-            <div class="join-actions">
-              <a class="button button-orange" href="https://www.instagram.com/casavventura/" target="_blank" rel="noreferrer">Segui su Instagram <span>→</span></a>
-              <a class="button button-light" href="mailto:casavventura@alessandroveneziani.it">Unisciti alla Casa</a>
-            </div>
+      <section class="community" id="entra" aria-labelledby="community-title">
+        <div class="community-art" aria-hidden="true"><img src="referenza/footer.png" alt="" width="2172" height="724" loading="lazy" /></div>
+        <div class="community-copy container">
+          <h2 id="community-title">Entra anche tu in CasAvventura!</h2>
+          <p>Segui le nostre avventure, unisciti alla community<br class="desktop-break" /> e aiutaci a risolvere i prossimi misteri.</p>
+          <div class="community-actions">
+            <a class="button button-primary" href="https://www.instagram.com/casavventura.it/" target="_blank" rel="noopener noreferrer">Seguici su Instagram <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="mailto:casavventura@alessandroveneziani.it">Unisciti alla Casa</a>
           </div>
-          <p class="hand-note join-note">INSIEME<br />È PIÙ BELLO! ♡</p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="footer-inner">
-        <a class="logo footer-logo" href="#top"><img src="public/approved/logo-approved.png" alt="CasAvventura — Una casa, mille avventure" /></a>
-        <nav aria-label="Navigazione footer">
+      <div class="footer-inner container">
+        <a class="footer-brand" href="#top" aria-label="Torna all’inizio">
+          <img src="public/approved/logo-approved.png" alt="CasAvventura" width="157" height="92" loading="lazy" />
+        </a>
+        <nav class="footer-nav" aria-label="Link utili">
           <a href="#universo">Chi siamo</a>
           <a href="mailto:casavventura@alessandroveneziani.it">Contatti</a>
-          <a href="#top">Privacy</a>
-          <a href="#top">FAQ</a>
+          <a href="mailto:casavventura@alessandroveneziani.it?subject=Informazioni%20Privacy">Privacy</a>
+          <a href="mailto:casavventura@alessandroveneziani.it?subject=Domande%20CasAvventura">FAQ</a>
         </nav>
-        <div class="socials" aria-label="Social">
-          <span>◎</span><span>▶</span><span>♪</span>
+        <div class="social-links" aria-label="Social CasAvventura">
+          <a href="https://www.instagram.com/casavventura.it/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="social-dot" cx="17.5" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@CasAvventura" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7.2a2.8 2.8 0 0 0-2-2C17.2 4.7 12 4.7 12 4.7s-5.2 0-7 .5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.5 12 29 29 0 0 0 3 16.8a2.8 2.8 0 0 0 2 2c1.8.5 7 .5 7 .5s5.2 0 7-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .5-4.8 29 29 0 0 0-.5-4.8Z"/><path class="social-fill" d="m10 15.5 5-3.5-5-3.5z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@casavventura.it" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3h3.1c.2 1.8 1.2 3.2 3.2 3.8v3.1a9 9 0 0 1-3.2-1.2v6.8a6.2 6.2 0 1 1-6.2-6.2c.5 0 1 .1 1.4.2v3.3a3 3 0 1 0 1.7 2.7V3Z"/></svg>
+          </a>
         </div>
-        <p>Più avventure. Ogni giorno. <span>♡</span></p>
+        <p class="footer-motto">Più avventure.<br />Ogni giorno. <span aria-hidden="true">♡</span></p>
       </div>
     </footer>
   </body>
