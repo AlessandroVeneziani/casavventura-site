@@ -1631,6 +1631,10 @@ button:focus-visible {
     text-align: left;
   }
 
+  .mission-card-latest .mission-art {
+    order: -1;
+  }
+
   .video-card-grid {
     grid-template-columns: 1fr;
   }
