@@ -2427,12 +2427,13 @@ button:focus-visible {
 }
 
 .download-bimbi {
-  right: 34%;
+  right: 48%;
+  height: 96% !important;
 }
 
 .download-jasper {
-  right: 0;
-  height: 98% !important;
+  right: -2%;
+  height: 96% !important;
 }
 
 @media (max-width: 900px) {
@@ -2471,10 +2472,12 @@ button:focus-visible {
   }
 
   .download-bimbi {
-    right: 43%;
+    right: 49%;
+    height: 104% !important;
   }
 
   .download-jasper {
-    right: 2%;
+    right: -3%;
+    height: 100% !important;
   }
 }
