@@ -2008,3 +2008,9 @@ button:focus-visible {
     line-height: 1.4;
   }
 }
+
+
+/* La copertina della Missione più recente usa lo stesso taglio delle altre */
+.mission-card-latest .mission-art {
+  border-radius: 0;
+}
