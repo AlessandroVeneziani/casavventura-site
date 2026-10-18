@@ -1926,3 +1926,12 @@ button:focus-visible {
     line-height: 1.23;
   }
 }
+
+
+/* Desktop: la Missione 3 allinea la copertina alla colonna delle Missioni precedenti */
+@media (min-width: 1081px) {
+  .mission-card-latest {
+    grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
+    padding-inline: 42px;
+  }
+}
