@@ -2014,3 +2014,12 @@ button:focus-visible {
 .mission-card-latest .mission-art {
   border-radius: 0;
 }
+
+
+/* Missione 3: stessa card delle altre, soltanto nella posizione più recente */
+@media (min-width: 1081px) {
+  .mission-card-current {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
