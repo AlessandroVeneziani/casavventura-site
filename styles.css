@@ -1322,3 +1322,1162 @@ button:focus-visible {
     transition-duration: .01ms !important;
   }
 }
+
+
+/* Content hub — Phase 1 */
+.eyebrow {
+  margin: 0 0 6px;
+  color: var(--color-orange) !important;
+  font-family: var(--font-display);
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.features .section-heading {
+  margin-bottom: 24px;
+}
+
+.features .feature-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.features .feature-card {
+  grid-template-columns: 64px minmax(0, 1fr);
+}
+
+.features .feature-icon {
+  width: 58px;
+  height: 58px;
+}
+
+.missions-heading > div {
+  min-width: 0;
+}
+
+.mission-card-latest {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr);
+  align-items: center;
+  gap: 28px;
+  padding: 22px;
+  border-color: rgba(244, 81, 30, .24);
+  background: linear-gradient(135deg, #fff 0%, #fff9f2 100%);
+  text-align: left;
+}
+
+.mission-card-latest .mission-art {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.mission-card-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mission-card-copy h3 {
+  margin: 12px 0 10px;
+  color: var(--color-teal-dark);
+  font-family: var(--font-display);
+  font-size: clamp(25px, 3vw, 38px);
+  line-height: 1.04;
+}
+
+.mission-card-copy p {
+  margin: 0 0 20px;
+  color: var(--color-muted);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.content-badge,
+.coming-label {
+  display: inline-flex;
+  width: max-content;
+  padding: 6px 11px;
+  border-radius: var(--radius-pill);
+  background: #fff0e8;
+  color: var(--color-orange);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.kids {
+  background: #f5fbfa;
+}
+
+.video-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  overflow: hidden;
+  border: 1px solid #e1ecea;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(7, 61, 72, .14);
+}
+
+.video-thumb {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: var(--color-teal-dark);
+}
+
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-badge {
+  position: absolute;
+  right: 16px;
+  bottom: 14px;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: var(--color-orange);
+  color: #fff;
+  font-size: 17px;
+  box-shadow: 0 5px 14px rgba(7, 61, 72, .24);
+}
+
+.video-copy {
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.video-copy h3 {
+  flex: 1;
+  margin: 13px 0 18px;
+  color: var(--color-teal-dark);
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 1.12;
+}
+
+.video-copy .button {
+  min-height: 44px;
+}
+
+.name-songs {
+  max-width: 830px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 28px auto 0;
+  padding: 20px 24px;
+  border: 2px dashed rgba(0, 82, 96, .28);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.name-songs > span {
+  color: var(--color-orange);
+  font-family: var(--font-display);
+  font-size: 46px;
+  line-height: 1;
+}
+
+.name-songs h3 {
+  margin: 0 0 3px;
+  color: var(--color-teal-dark);
+  font-family: var(--font-display);
+  font-size: 23px;
+}
+
+.name-songs p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.house-life {
+  background: #fff;
+}
+
+.life-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.life-card {
+  min-height: 190px;
+  padding: 22px;
+  border: 1px solid #e7eceb;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.life-symbol {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-teal);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.life-card:nth-child(even) .life-symbol {
+  background: var(--color-orange);
+}
+
+.life-card h3,
+.coming-card h3 {
+  margin: 18px 0 8px;
+  color: var(--color-teal-dark);
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 1.08;
+}
+
+.life-card p,
+.coming-card p {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.45;
+}
+
+.section-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+}
+
+.coming {
+  padding-top: 24px;
+  background: #fffdf8;
+}
+
+.coming-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.coming-card {
+  position: relative;
+  min-height: 220px;
+  padding: 28px;
+  border: 1px solid #eadfcd;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.coming-label {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.coming-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-parchment);
+  color: var(--color-teal-dark);
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.coming-card h3 {
+  font-size: 27px;
+}
+
+@media (max-width: 1080px) {
+  .features .feature-grid,
+  .life-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 780px) {
+  .mission-card-latest {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    text-align: left;
+  }
+
+  .mission-card-latest .mission-art {
+    order: -1;
+  }
+
+  .video-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-card {
+    max-width: 620px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .video-copy {
+    min-height: 0;
+  }
+
+  .coming-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .features .feature-grid,
+  .life-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-card-latest {
+    padding: 14px;
+  }
+
+  .mission-card-copy h3 {
+    font-size: 27px;
+  }
+
+  .name-songs {
+    align-items: flex-start;
+    padding: 18px;
+  }
+
+  .life-card {
+    min-height: 0;
+  }
+
+  .coming-label {
+    position: static;
+    margin-bottom: 16px;
+  }
+
+  .coming-card {
+    min-height: 0;
+    padding: 22px;
+  }
+}
+
+
+/* Vita nella Casa: contenuti reali */
+.missions-heading {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.missions-intro {
+  max-width: 520px;
+  margin: 8px 0 0 !important;
+  color: var(--color-text) !important;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.life-card-video {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.life-card-video:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(7, 61, 72, .14);
+}
+
+.life-card-media,
+.coming-card-media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: var(--color-teal-dark);
+}
+
+.life-card-media img,
+.coming-card-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform .25s ease;
+}
+
+.life-card-video:hover .life-card-media img,
+.coming-card-live:hover .coming-card-media img {
+  transform: scale(1.04);
+}
+
+.life-video-badge {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 9px;
+  border-radius: var(--radius-pill);
+  background: rgba(0, 45, 55, .88);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.life-card-body {
+  min-height: 186px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 18px 18px 20px;
+}
+
+.life-kicker {
+  margin: 0 !important;
+  color: var(--color-orange) !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.life-card-video h3 {
+  margin: 11px 0 16px;
+  font-size: 22px;
+}
+
+.life-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  color: var(--color-orange);
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.life-action b {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: .7;
+}
+
+.coming .section-heading > p:last-child {
+  max-width: 680px;
+  margin: 10px auto 0;
+  color: var(--color-muted);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.coming-card-live {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.coming-card-live:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(7, 61, 72, .14);
+}
+
+.coming-card-media .coming-label {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+.coming-card-copy {
+  min-height: 220px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 24px 24px;
+}
+
+.coming-card-copy h3 {
+  margin-top: 14px;
+}
+
+.coming-card-copy .life-action {
+  margin-top: 16px;
+}
+
+.coming-card-download {
+  overflow: hidden;
+  padding-right: 38%;
+}
+
+.coming-card-download .coming-label {
+  position: static;
+  margin-bottom: 16px;
+}
+
+.coming-card-illustration {
+  position: absolute;
+  right: -9%;
+  bottom: -17%;
+  width: 47%;
+  height: auto;
+  opacity: .96;
+  transform: rotate(9deg);
+}
+
+.coming-card-download .coming-icon {
+  position: relative;
+  z-index: 1;
+}
+
+.coming-card-download h3,
+.coming-card-download p {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 780px) {
+  .missions-intro {
+    font-size: 17px;
+  }
+
+  .life-card-body {
+    min-height: 0;
+  }
+
+  .coming-card-download {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 560px) {
+  .missions-intro {
+    margin-top: 7px !important;
+    font-size: 16px;
+  }
+
+  .coming-card-media .coming-label {
+    position: absolute;
+    margin: 0;
+  }
+
+  .coming-card-download {
+    padding-right: 42%;
+  }
+
+  .coming-card-illustration {
+    right: -13%;
+    width: 58%;
+  }
+}
+
+
+/* Tablet: il testo resta sempre dentro la pergamena di benvenuto */
+@media (min-width: 781px) and (max-width: 1080px) {
+  .welcome-inner {
+    gap: 32px;
+  }
+
+  .welcome-paper p {
+    top: 51%;
+    left: 19%;
+    width: 60%;
+    font-size: clamp(10px, 1.25vw, 13px);
+    line-height: 1.23;
+  }
+}
+
+
+/* Desktop: la Missione 3 allinea la copertina alla colonna delle Missioni precedenti */
+@media (min-width: 1081px) {
+  .mission-card-latest {
+    grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
+    padding-inline: 42px;
+  }
+}
+
+
+/* Desktop: composizione a L per allineare Missione 3 sopra Missione 2 */
+@media (min-width: 1081px) {
+  .missions .container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  .missions-heading {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    margin: 0;
+  }
+
+  .mission-grid {
+    display: contents;
+  }
+
+  .mission-card-latest {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 12px 18px 22px;
+    border-color: #edf0ef;
+    background: #fff;
+    text-align: center;
+  }
+
+  .mission-grid > .mission-card:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .mission-grid > .mission-card:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .mission-card-latest .mission-art {
+    order: -1;
+    width: 100%;
+    height: 320px;
+    aspect-ratio: auto;
+    border-radius: 0;
+    object-fit: cover;
+  }
+
+  .mission-card-latest .mission-card-copy {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .mission-card-latest .content-badge,
+  .mission-card-latest h3 {
+    display: none;
+  }
+
+  .mission-card-latest .mission-card-copy p {
+    max-width: 450px;
+    min-height: 48px;
+    margin: 16px 0 14px;
+    color: var(--color-muted);
+    font-size: 15px;
+    line-height: 1.4;
+  }
+}
+
+
+/* La copertina della Missione più recente usa lo stesso taglio delle altre */
+.mission-card-latest .mission-art {
+  border-radius: 0;
+}
+
+
+/* Missione 3: stessa card delle altre, soltanto nella posizione più recente */
+@media (min-width: 1081px) {
+  .mission-card-current {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+
+/* Caroselli editoriali: stessi contenuti, più spazio per le nuove uscite */
+.carousel-shell {
+  position: relative;
+}
+
+.carousel-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 40px) / 3);
+  grid-template-columns: none !important;
+  gap: 20px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 2px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track > * {
+  width: auto;
+  scroll-snap-align: start;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 2px solid var(--color-teal-dark);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--color-teal-dark);
+  font-family: Arial, sans-serif;
+  font-size: 35px;
+  line-height: 1;
+  box-shadow: 0 6px 16px rgba(7, 61, 72, .18);
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background .2s ease, color .2s ease, opacity .2s ease, transform .2s ease;
+}
+
+.carousel-button:hover:not(:disabled),
+.carousel-button:focus-visible:not(:disabled) {
+  background: var(--color-teal-dark);
+  color: #fff;
+  transform: translateY(-50%) scale(1.06);
+}
+
+.carousel-button:focus-visible {
+  outline: 3px solid var(--color-orange);
+  outline-offset: 3px;
+}
+
+.carousel-button:disabled {
+  cursor: default;
+}
+
+.carousel-shell:not(.has-overflow) .carousel-button,
+.carousel-button:disabled {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.carousel-button-prev {
+  left: -23px;
+}
+
+.carousel-button-next {
+  right: -23px;
+}
+
+.video-card-grid.carousel-track .video-card,
+.life-grid.carousel-track .life-card {
+  margin: 0;
+}
+
+@media (max-width: 1080px) {
+  .carousel-track {
+    grid-auto-columns: calc((100% - 20px) / 2);
+  }
+}
+
+@media (max-width: 780px) {
+  .carousel-track {
+    grid-auto-columns: minmax(84%, 440px);
+  }
+
+  .carousel-button {
+    width: 42px;
+    height: 42px;
+    font-size: 31px;
+  }
+
+  .carousel-button-prev {
+    left: -13px;
+  }
+
+  .carousel-button-next {
+    right: -13px;
+  }
+}
+
+
+/* Casi Impossibili: raccolta reale e archivio pronto a crescere */
+.cases {
+  background: #fffaf2;
+}
+
+.cases .section-heading > p:last-child,
+.downloads .section-heading > p:last-child {
+  max-width: 650px;
+  margin: 10px auto 0;
+  color: var(--color-muted);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.case-card .video-copy {
+  min-height: 185px;
+}
+
+.case-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 1;
+  background: var(--color-teal-dark);
+  color: #fff;
+}
+
+.downloads .coming-grid {
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
+}
+
+.downloads .coming-card-download {
+  min-height: 245px;
+}
+
+@media (max-width: 560px) {
+  .cases .section-heading > p:last-child,
+  .downloads .section-heading > p:last-child {
+    font-size: 16px;
+  }
+}
+
+
+/* Hub Gioca: due raccolte sorelle, una per indovinare e una per investigare */
+.play-hub {
+  background: #fffaf2;
+}
+
+.play-hub .section-heading > p:last-child,
+.downloads .section-heading > p:last-child {
+  max-width: 720px;
+  margin: 10px auto 0;
+  color: var(--color-muted);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.play-collections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 30px;
+}
+
+.play-collection {
+  min-width: 0;
+  padding: 26px;
+  border: 1px solid #eadfcd;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.play-collection-heading {
+  min-height: 148px;
+}
+
+.play-collection-heading .eyebrow {
+  margin-bottom: 7px;
+}
+
+.play-collection-heading h3 {
+  margin: 0 0 8px;
+  color: var(--color-teal-dark);
+  font-family: var(--font-display);
+  font-size: 30px;
+  line-height: 1.06;
+}
+
+.play-collection-heading > p:last-child {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 15px;
+  line-height: 1.42;
+}
+
+.play-collection .carousel-track {
+  grid-auto-columns: 100%;
+}
+
+.play-collection .carousel-button {
+  top: 50%;
+}
+
+.play-collection .video-copy {
+  min-height: 172px;
+}
+
+.play-collection .video-copy h4 {
+  flex: 1;
+  margin: 0 0 18px;
+  color: var(--color-teal-dark);
+  font-family: var(--font-display);
+  font-size: 23px;
+  line-height: 1.12;
+}
+
+.case-badge,
+.riddle-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 1;
+  background: var(--color-teal-dark);
+  color: #fff;
+}
+
+.riddle-badge {
+  background: var(--color-orange);
+}
+
+.play-collection-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  color: var(--color-orange);
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.play-collection-link:hover,
+.play-collection-link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.downloads .coming-grid {
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
+}
+
+.downloads .coming-card-download {
+  min-height: 245px;
+}
+
+@media (max-width: 900px) {
+  .play-collections {
+    grid-template-columns: 1fr;
+    max-width: 620px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .play-collection {
+    padding: 22px 18px;
+  }
+
+  .play-collection-heading {
+    min-height: 0;
+    margin-bottom: 18px;
+  }
+
+  .play-collection-heading h3 {
+    font-size: 28px;
+  }
+
+  .play-hub .section-heading > p:last-child,
+  .downloads .section-heading > p:last-child {
+    font-size: 16px;
+  }
+}
+
+
+/* Fascia Scarica: promessa editoriale a tutta larghezza */
+.downloads .coming-grid {
+  grid-template-columns: 1fr;
+  max-width: none;
+}
+
+.downloads .coming-card-download {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  padding: 46px 48% 46px 48px;
+  border-color: rgba(0, 82, 96, .2);
+  background:
+    radial-gradient(circle at 70% 24%, rgba(255, 203, 61, .28) 0 6%, transparent 6.2%),
+    linear-gradient(118deg, #fffdf8 0%, #f0faf8 100%);
+}
+
+.download-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 540px;
+}
+
+.downloads .coming-card-download .coming-label {
+  display: inline-flex;
+  margin-bottom: 18px;
+}
+
+.downloads .coming-card-download .coming-icon {
+  margin-bottom: 16px;
+}
+
+.downloads .coming-card-download h3 {
+  max-width: 510px;
+  margin: 0 0 12px;
+  font-size: clamp(29px, 3vw, 40px);
+}
+
+.downloads .coming-card-download p {
+  margin: 0 0 8px;
+  color: var(--color-teal-dark);
+  font-weight: 800;
+}
+
+.download-list {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  color: var(--color-muted);
+  list-style: none;
+  line-height: 1.45;
+}
+
+.download-list li {
+  position: relative;
+  padding-left: 22px;
+}
+
+.download-list li::before {
+  position: absolute;
+  top: .2em;
+  left: 0;
+  color: var(--color-orange);
+  content: "✦";
+}
+
+.download-characters {
+  position: absolute;
+  right: 3%;
+  bottom: 0;
+  width: 47%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.download-characters::before {
+  position: absolute;
+  right: 13%;
+  bottom: 10%;
+  width: 68%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .6);
+  content: "";
+}
+
+.download-characters img {
+  position: absolute;
+  bottom: -7%;
+  z-index: 1;
+  width: auto;
+  max-width: none;
+  height: 106%;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.download-bimbi {
+  right: 48%;
+  height: 96% !important;
+}
+
+.download-jasper {
+  right: -2%;
+  height: 96% !important;
+}
+
+@media (max-width: 900px) {
+  .downloads .coming-card-download {
+    min-height: 400px;
+    padding-right: 45%;
+  }
+
+  .download-characters {
+    right: 0;
+    width: 52%;
+  }
+}
+
+@media (max-width: 620px) {
+  .downloads .coming-card-download {
+    min-height: 560px;
+    align-items: flex-start;
+    padding: 34px 26px 230px;
+  }
+
+  .download-characters {
+    width: 100%;
+    height: 260px;
+  }
+
+  .download-characters::before {
+    right: 18%;
+    bottom: 3%;
+    width: 58%;
+  }
+
+  .download-characters img {
+    height: 112%;
+    bottom: -8%;
+  }
+
+  .download-bimbi {
+    right: 49%;
+    height: 104% !important;
+  }
+
+  .download-jasper {
+    right: -3%;
+    height: 100% !important;
+  }
+}

@@ -4,21 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#ffffff" />
-    <meta name="description" content="Missioni, storie, esperimenti, animali e sorprese da vivere insieme. Benvenuti in CasAvventura: una casa dove ogni giorno può diventare un’avventura." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://casavventura.it/" />
+    <meta name="description" content="Entra a CasAvventura: Missioni, canzoni per bambini, indovinelli, animali e storie con Alex, Bimbi del Rio e Gatto Jasper." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://casavventura.it/" />
     <meta property="og:locale" content="it_IT" />
     <meta property="og:title" content="CasAvventura | Una casa, mille avventure" />
-    <meta property="og:description" content="Missioni, storie, esperimenti, animali e sorprese da vivere insieme." />
-    <meta property="og:image" content="referenza/hero.png" />
+    <meta property="og:description" content="Missioni, canzoni per bambini, indovinelli, animali e storie con Alex, Bimbi del Rio e Gatto Jasper." />
+    <meta property="og:image" content="https://casavventura.it/referenza/hero.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="CasAvventura | Una casa, mille avventure" />
-    <meta name="twitter:description" content="Missioni, storie, esperimenti, animali e sorprese da vivere insieme." />
-    <meta name="twitter:image" content="referenza/hero.png" />
+    <meta name="twitter:description" content="Missioni, canzoni per bambini, indovinelli, animali e storie con Alex, Bimbi del Rio e Gatto Jasper." />
+    <meta name="twitter:image" content="https://casavventura.it/referenza/hero.png" />
     <title>CasAvventura | Una casa, mille avventure</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23005260'/%3E%3Cpath d='M13 31 32 14l19 17v20H13z' fill='none' stroke='%23fff' stroke-width='5'/%3E%3Cpath d='M25 51V38h14v13' fill='none' stroke='%23ff641f' stroke-width='5'/%3E%3C/svg%3E" />
     <link rel="preload" href="referenza/hero.png" as="image" fetchpriority="high" />
     <link rel="preload" href="referenza/fonts/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OFiXMFg.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://casavventura.it/#organization",
+            "name": "CasAvventura",
+            "url": "https://casavventura.it/",
+            "logo": "https://casavventura.it/public/approved/logo-approved.png",
+            "description": "CasAvventura è un universo italiano di Missioni, indovinelli, canzoni per bambini e storie con Alex, Bimbi del Rio e Gatto Jasper.",
+            "sameAs": [
+              "https://www.youtube.com/@CasAvventura",
+              "https://www.instagram.com/casavventura.it/",
+              "https://www.tiktok.com/@casavventura.it",
+              "https://www.facebook.com/profile.php?id=61593976480629"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://casavventura.it/#website",
+            "url": "https://casavventura.it/",
+            "name": "CasAvventura",
+            "description": "Una casa, mille avventure.",
+            "inLanguage": "it-IT",
+            "publisher": { "@id": "https://casavventura.it/#organization" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://casavventura.it/#webpage",
+            "url": "https://casavventura.it/",
+            "name": "CasAvventura | Una casa, mille avventure",
+            "description": "Entra a CasAvventura: Missioni, canzoni per bambini, indovinelli, animali e storie con Alex, Bimbi del Rio e Gatto Jasper.",
+            "inLanguage": "it-IT",
+            "isPartOf": { "@id": "https://casavventura.it/#website" },
+            "about": [
+              "Missioni per bambini",
+              "Indovinelli",
+              "Casi Impossibili",
+              "Canzoni per bambini",
+              "Bimbi del Rio",
+              "Gatto Jasper"
+            ]
+          }
+        ]
+      }
+    </script>
     <script src="site.js" defer></script>
   </head>
   <body>
@@ -37,10 +87,10 @@
 
         <nav class="main-nav" id="primary-navigation" aria-label="Navigazione principale">
           <a href="#universo">L’universo</a>
-          <a href="#missioni">Missioni</a>
-          <a href="#chi-ci-vive">Chi ci vive</a>
-          <a href="#contenuti">Contenuti</a>
-          <a href="#entra">Entra nella Casa</a>
+          <a href="#missioni">Guarda</a>
+          <a href="#gioca">Gioca</a>
+          <a href="#vita-casa">Vita nella Casa</a>
+          <a href="#scarica">Scarica</a>
         </nav>
 
         <a class="button button-primary header-cta" href="#entra">Unisciti all’avventura <span aria-hidden="true">→</span></a>
@@ -92,24 +142,34 @@
         </div>
       </section>
 
-      <section class="features section-space" id="contenuti" aria-label="Cosa trovi in CasAvventura">
-        <h2 class="visually-hidden">Contenuti CasAvventura</h2>
-        <div class="feature-grid container">
-          <article class="feature-card">
-            <img class="feature-icon" src="referenza/missioni.png" alt="" width="1254" height="1254" loading="lazy" />
-            <div class="feature-copy"><h3>Missioni</h3><p>Indizi, misteri e sfide da risolvere insieme. Sei pronto a mettere alla prova la tua astuzia?</p></div>
-            <a class="feature-link" href="#missioni" aria-label="Scopri le missioni"><span>Scopri</span><b aria-hidden="true">→</b></a>
-          </article>
-          <article class="feature-card">
-            <img class="feature-icon" src="referenza/libro.png" alt="" width="1254" height="1254" loading="lazy" />
-            <div class="feature-copy"><h3>Storie</h3><p>Racconti, avventure e momenti di vita vera con Alex, Bimbi e Jasper. Ogni giorno una nuova storia da scoprire.</p></div>
-            <a class="feature-link" href="#chi-ci-vive" aria-label="Scopri le storie"><span>Scopri</span><b aria-hidden="true">→</b></a>
-          </article>
-          <article class="feature-card">
-            <img class="feature-icon" src="referenza/esperimenti.png" alt="" width="1254" height="1254" loading="lazy" />
-            <div class="feature-copy"><h3>Esperimenti</h3><p>Scienza, curiosità e prove strampalate per capire il mondo, anche da casa. Per menti curiose di tutte le età.</p></div>
-            <a class="feature-link" href="#missioni" aria-label="Scopri gli esperimenti"><span>Scopri</span><b aria-hidden="true">→</b></a>
-          </article>
+      <section class="features section-space" id="contenuti" aria-labelledby="adventure-title">
+        <div class="container">
+          <header class="section-heading">
+            <p class="eyebrow">Scegli la tua avventura</p>
+            <h2 id="adventure-title">Da dove vuoi entrare?</h2>
+          </header>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <img class="feature-icon" src="referenza/missioni.png" alt="" width="1254" height="1254" loading="lazy" />
+              <div class="feature-copy"><h3>Missioni</h3><p>Indizi, misteri e sfide da risolvere insieme. Sei pronto a mettere alla prova la tua astuzia?</p></div>
+              <a class="feature-link" href="#missioni" aria-label="Scopri le missioni"><span>Guarda</span><b aria-hidden="true">→</b></a>
+            </article>
+            <article class="feature-card">
+              <img class="feature-icon" src="referenza/libro.png" alt="" width="1254" height="1254" loading="lazy" />
+              <div class="feature-copy"><h3>CasAvventura Kids</h3><p>Canzoni, colori, numeri e animali da scoprire insieme a Bimbi e Jasper.</p></div>
+              <a class="feature-link" href="#kids" aria-label="Scopri CasAvventura Kids"><span>Canta e gioca</span><b aria-hidden="true">→</b></a>
+            </article>
+            <article class="feature-card">
+              <img class="feature-icon" src="referenza/esperimenti.png" alt="" width="1254" height="1254" loading="lazy" />
+              <div class="feature-copy"><h3>Gioca</h3><p>Indovinelli e Casi Impossibili per osservare gli indizi e scegliere la tua teoria.</p></div>
+              <a class="feature-link" href="#gioca" aria-label="Scopri i giochi in arrivo"><span>Scopri</span><b aria-hidden="true">→</b></a>
+            </article>
+            <article class="feature-card">
+              <img class="feature-icon" src="referenza/cuore.png" alt="" width="1254" height="1254" loading="lazy" />
+              <div class="feature-copy"><h3>Vita nella Casa</h3><p>Bimbi Concierge, Jasper Controllo Qualità e tutto quello che succede tra una Missione e l’altra.</p></div>
+              <a class="feature-link" href="#vita-casa" aria-label="Entra nella vita della Casa"><span>Entra</span><b aria-hidden="true">→</b></a>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -151,27 +211,210 @@
       <section class="missions section-space" id="missioni" aria-labelledby="missions-title">
         <div class="container">
           <header class="missions-heading">
-            <h2 id="missions-title">Le ultime missioni</h2>
-            <p>Sei pronto a metterti in gioco?</p>
+            <div>
+              <p class="eyebrow">Guarda</p>
+              <h2 id="missions-title">Le ultime Missioni</h2>
+              <p class="missions-intro">Sei pronto a metterti in gioco?</p>
+            </div>
           </header>
           <div class="mission-grid">
+            <a class="mission-card mission-card-current" href="https://www.youtube.com/watch?v=XoDnbZqmpvA" target="_blank" rel="noopener noreferrer">
+              <img class="mission-art mission-video-thumb" src="https://img.youtube.com/vi/XoDnbZqmpvA/maxresdefault.jpg" alt="Copertina della Missione 003: cosa è successo ai nostri capelli" width="1280" height="720" loading="lazy" />
+              <h3 class="visually-hidden">Missione 003: Cosa è successo ai nostri capelli?</h3>
+              <p>Una bacchetta magica, un esperimento e un risultato completamente imprevisto: Alex, Bimbi e Jasper non sono più gli stessi.</p>
+              <span class="button button-primary">Scopri la Missione <span aria-hidden="true">→</span></span>
+            </a>
             <a class="mission-card" href="https://www.youtube.com/watch?v=BpN09pbK9RM" target="_blank" rel="noopener noreferrer">
-              <img class="mission-art" src="referenza/missione1.png" alt="Illustrazione della busta misteriosa sigillata con ceralacca rossa e una bussola" width="1536" height="1024" loading="lazy" />
+              <img class="mission-art mission-video-thumb" src="https://img.youtube.com/vi/BpN09pbK9RM/maxresdefault.jpg" alt="Copertina pubblicata della Missione 001: una busta misteriosa" width="1280" height="720" loading="lazy" />
               <h3 class="visually-hidden">Missione 001: Cosa c’è dentro?</h3>
               <p>Abbiamo trovato una busta misteriosa. Aiutaci a scoprire cosa nasconde.</p>
-              <span class="button button-primary">Scopri la missione <span aria-hidden="true">→</span></span>
+              <span class="button button-primary">Scopri la Missione <span aria-hidden="true">→</span></span>
             </a>
             <a class="mission-card" href="https://www.youtube.com/watch?v=KFKEp5t91QI" target="_blank" rel="noopener noreferrer">
-              <img class="mission-art" src="referenza/missione2.png" alt="Illustrazione approvata della scatola beige chiusa con corda, sigillo CasAvventura, bussola e mappa" width="1448" height="1086" loading="lazy" />
+              <img class="mission-art mission-video-thumb" src="https://img.youtube.com/vi/KFKEp5t91QI/maxresdefault.jpg" alt="Copertina pubblicata della Missione 002: la scatola misteriosa" width="1280" height="720" loading="lazy" />
               <h3 class="visually-hidden">Missione 002: La scatola misteriosa</h3>
               <p>Una scatola misteriosa, una mappa e nuovi indizi da scoprire insieme.</p>
-              <span class="button button-primary">Scopri la missione <span aria-hidden="true">→</span></span>
+              <span class="button button-primary">Scopri la Missione <span aria-hidden="true">→</span></span>
             </a>
           </div>
         </div>
       </section>
 
-      <section class="community" id="entra" aria-labelledby="community-title">
+      <section class="kids section-space" id="kids" aria-labelledby="kids-title">
+        <div class="container">
+          <header class="section-heading">
+            <p class="eyebrow">Guarda, canta, impara</p>
+            <h2 id="kids-title">CasAvventura Kids</h2>
+            <p>Canzoni, animali, colori e piccole avventure da cantare insieme a Bimbi e Jasper.</p>
+          </header>
+          <div class="carousel-shell" data-carousel>
+            <button class="carousel-button carousel-button-prev" type="button" aria-label="Video Kids precedenti" aria-controls="kids-carousel" disabled><span aria-hidden="true">‹</span></button>
+            <div class="video-card-grid carousel-track" id="kids-carousel" tabindex="0" aria-label="Video CasAvventura Kids">
+            <article class="video-card">
+              <a href="https://www.youtube.com/watch?v=tFwk2NNmTDI" target="_blank" rel="noopener noreferrer" aria-label="Guarda La Canzone dei Colori per Bambini su YouTube">
+                <div class="video-thumb"><img src="https://img.youtube.com/vi/tFwk2NNmTDI/maxresdefault.jpg" alt="Copertina de La Canzone dei Colori per Bambini" width="1280" height="720" loading="lazy" /><span class="play-badge" aria-hidden="true">▶</span></div>
+                <div class="video-copy"><span class="content-badge">CasAvventura Kids</span><h3>La Canzone dei Colori per Bambini</h3><span class="button button-primary">Canta e gioca</span></div>
+              </a>
+            </article>
+            <article class="video-card">
+              <a href="https://www.youtube.com/watch?v=2VinsjH8l4A" target="_blank" rel="noopener noreferrer" aria-label="Guarda Contiamo da 1 a 10 su YouTube">
+                <div class="video-thumb"><img src="https://img.youtube.com/vi/2VinsjH8l4A/maxresdefault.jpg" alt="Copertina di Contiamo da 1 a 10 con Gatto Jasper e Bimbi del Rio" width="1280" height="720" loading="lazy" /><span class="play-badge" aria-hidden="true">▶</span></div>
+                <div class="video-copy"><span class="content-badge">CasAvventura Kids</span><h3>Contiamo da 1 a 10 con Gatto Jasper e Bimbi del Rio</h3><span class="button button-primary">Canta e gioca</span></div>
+              </a>
+            </article>
+            <article class="video-card">
+              <a href="https://www.youtube.com/watch?v=KaRyonJ6BM0" target="_blank" rel="noopener noreferrer" aria-label="Guarda Impariamo i versi degli animali su YouTube">
+                <div class="video-thumb"><img src="https://img.youtube.com/vi/KaRyonJ6BM0/maxresdefault.jpg" alt="Copertina di Impariamo i versi degli animali con Bimbi e Jasper" width="1280" height="720" loading="lazy" /><span class="play-badge" aria-hidden="true">▶</span></div>
+                <div class="video-copy"><span class="content-badge">CasAvventura Kids</span><h3>Impariamo i versi degli animali con Bimbi e Jasper</h3><span class="button button-primary">Canta e gioca</span></div>
+              </a>
+            </article>
+            </div>
+            <button class="carousel-button carousel-button-next" type="button" aria-label="Altri video Kids" aria-controls="kids-carousel" disabled><span aria-hidden="true">›</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="house-life section-space" id="vita-casa" aria-labelledby="house-life-title">
+        <div class="container">
+          <header class="section-heading">
+            <p class="eyebrow">I personaggi, ogni giorno</p>
+            <h2 id="house-life-title">Vita nella Casa</h2>
+            <p>Quando non ci sono Missioni, a CasAvventura succede comunque di tutto.</p>
+          </header>
+          <div class="carousel-shell" data-carousel>
+            <button class="carousel-button carousel-button-prev" type="button" aria-label="Short precedenti della Vita nella Casa" aria-controls="life-carousel" disabled><span aria-hidden="true">‹</span></button>
+            <div class="life-grid carousel-track" id="life-carousel" tabindex="0" aria-label="Short della Vita nella Casa">
+            <a class="life-card life-card-video" href="https://www.youtube.com/shorts/oz83cMyIlSY" target="_blank" rel="noopener noreferrer">
+              <div class="life-card-media"><img src="https://i.ytimg.com/vi/oz83cMyIlSY/hqdefault.jpg" alt="Bimbi nel video Quando il tuo cane decide di comandare in casa" width="480" height="360" loading="lazy" /><span class="life-video-badge">Short <b aria-hidden="true">▶</b></span></div>
+              <div class="life-card-body"><p class="life-kicker">Bimbi Concierge</p><h3>Quando Bimbi decide di comandare in casa</h3><span class="life-action">Guarda lo Short <b aria-hidden="true">→</b></span></div>
+            </a>
+            <a class="life-card life-card-video" href="https://www.youtube.com/shorts/auT_URd8Vuo" target="_blank" rel="noopener noreferrer">
+              <div class="life-card-media"><img src="https://i.ytimg.com/vi/auT_URd8Vuo/hqdefault.jpg" alt="Jasper nel video sul nuovo outfit di Bimbi" width="480" height="360" loading="lazy" /><span class="life-video-badge">Short <b aria-hidden="true">▶</b></span></div>
+              <div class="life-card-body"><p class="life-kicker">Jasper Controllo Qualità</p><h3>Jasper è scioccato dall’outfit di Bimbi</h3><span class="life-action">Guarda lo Short <b aria-hidden="true">→</b></span></div>
+            </a>
+            <a class="life-card life-card-video" href="https://www.youtube.com/shorts/PF2UidvdM-I" target="_blank" rel="noopener noreferrer">
+              <div class="life-card-media"><img src="https://i.ytimg.com/vi/PF2UidvdM-I/hqdefault.jpg" alt="Bimbi mentre elabora un aiuto chiesto da Alex" width="480" height="360" loading="lazy" /><span class="life-video-badge">Short <b aria-hidden="true">▶</b></span></div>
+              <div class="life-card-body"><p class="life-kicker">Analisi in corso</p><h3>Ho chiesto aiuto a Bimbi… sta elaborando</h3><span class="life-action">Guarda lo Short <b aria-hidden="true">→</b></span></div>
+            </a>
+            <a class="life-card life-card-video" href="https://www.youtube.com/shorts/SPSXxUUwZvg" target="_blank" rel="noopener noreferrer">
+              <div class="life-card-media"><img src="https://i.ytimg.com/vi/SPSXxUUwZvg/hqdefault.jpg" alt="Alex nel video La sorpresa di Alex a casa" width="480" height="360" loading="lazy" /><span class="life-video-badge">Short <b aria-hidden="true">▶</b></span></div>
+              <div class="life-card-body"><p class="life-kicker">Alex fa una cavolata</p><h3>La sorpresa di Alex a casa</h3><span class="life-action">Guarda lo Short <b aria-hidden="true">→</b></span></div>
+            </a>
+            </div>
+            <button class="carousel-button carousel-button-next" type="button" aria-label="Altri Short della Vita nella Casa" aria-controls="life-carousel" disabled><span aria-hidden="true">›</span></button>
+          </div>
+          <div class="section-action"><a class="button button-secondary" href="https://www.youtube.com/@CasAvventura/shorts" target="_blank" rel="noopener noreferrer">Scopri cosa succede nella Casa <span aria-hidden="true">→</span></a></div>
+        </div>
+      </section>
+
+                  <section class="play-hub section-space" id="gioca" aria-labelledby="play-title">
+        <div class="container">
+          <header class="section-heading">
+            <p class="eyebrow">Gioca, indovina, risolvi</p>
+            <h2 id="play-title">Gioca con CasAvventura</h2>
+            <p>Scegli la tua sfida: trova la risposta prima di Bimbi e Jasper, oppure risolvi un Caso Impossibile facendo le domande giuste.</p>
+          </header>
+
+          <div class="play-collections">
+            <section class="play-collection" aria-labelledby="riddles-title">
+              <header class="play-collection-heading">
+                <p class="eyebrow">Pensa veloce</p>
+                <h3 id="riddles-title">Gli Indovinelli</h3>
+                <p>Ascolta gli indizi, diffida delle loro teorie e prova a trovare la risposta.</p>
+              </header>
+              <div class="carousel-shell" data-carousel>
+                <button class="carousel-button carousel-button-prev" type="button" aria-label="Indovinelli precedenti" aria-controls="riddles-carousel" disabled><span aria-hidden="true">‹</span></button>
+                <div class="video-card-grid carousel-track" id="riddles-carousel" tabindex="0" aria-label="Raccolta degli Indovinelli">
+                  <article class="video-card riddle-card">
+                    <a href="https://www.youtube.com/shorts/T7DZ0Qqjdnc" target="_blank" rel="noopener noreferrer" aria-label="Apri l'Indovinello 1 su YouTube">
+                      <div class="video-thumb"><img src="https://i.ytimg.com/vi/T7DZ0Qqjdnc/hqdefault.jpg" alt="Copertina dell'Indovinello 1 di CasAvventura" width="480" height="360" loading="lazy" /><span class="content-badge riddle-badge">Indovinello 1</span><span class="play-badge" aria-hidden="true">▶</span></div>
+                      <div class="video-copy"><h4>Ha i denti ma non mangia… Bimbi è sicura</h4><span class="button button-primary">Prova a indovinare</span></div>
+                    </a>
+                  </article>
+                  <article class="video-card riddle-card">
+                    <a href="https://www.youtube.com/shorts/VB2hSF0dsL4" target="_blank" rel="noopener noreferrer" aria-label="Apri l'Indovinello 2 su YouTube">
+                      <div class="video-thumb"><img src="https://i.ytimg.com/vi/VB2hSF0dsL4/hqdefault.jpg" alt="Copertina dell'Indovinello 2 di CasAvventura" width="480" height="360" loading="lazy" /><span class="content-badge riddle-badge">Indovinello 2</span><span class="play-badge" aria-hidden="true">▶</span></div>
+                      <div class="video-copy"><h4>Più asciuga, più si bagna… Jasper è sicuro</h4><span class="button button-primary">Prova a indovinare</span></div>
+                    </a>
+                  </article>
+                  <article class="video-card riddle-card">
+                    <a href="https://www.youtube.com/shorts/WQAWI6QhrNE" target="_blank" rel="noopener noreferrer" aria-label="Apri l'Indovinello 3 su YouTube">
+                      <div class="video-thumb"><img src="https://i.ytimg.com/vi/WQAWI6QhrNE/hqdefault.jpg" alt="Copertina dell'Indovinello 3 di CasAvventura" width="480" height="360" loading="lazy" /><span class="content-badge riddle-badge">Indovinello 3</span><span class="play-badge" aria-hidden="true">▶</span></div>
+                      <div class="video-copy"><h4>Più ne togli, più diventa grande… Bimbi è sicura</h4><span class="button button-primary">Prova a indovinare</span></div>
+                    </a>
+                  </article>
+                </div>
+                <button class="carousel-button carousel-button-next" type="button" aria-label="Altri Indovinelli" aria-controls="riddles-carousel" disabled><span aria-hidden="true">›</span></button>
+              </div>
+              <a class="play-collection-link" href="https://www.youtube.com/playlist?list=PLfNiM0KgQefM" target="_blank" rel="noopener noreferrer">Tutti gli Indovinelli <span aria-hidden="true">→</span></a>
+            </section>
+
+            <section class="play-collection" aria-labelledby="cases-title">
+              <header class="play-collection-heading">
+                <p class="eyebrow">Il detective sei tu</p>
+                <h3 id="cases-title">Casi Impossibili</h3>
+                <p>Alex ti racconta il finale. Tu fai le domande e scopri cosa è successo davvero.</p>
+              </header>
+              <div class="carousel-shell" data-carousel>
+                <button class="carousel-button carousel-button-prev" type="button" aria-label="Casi precedenti" aria-controls="cases-carousel" disabled><span aria-hidden="true">‹</span></button>
+                <div class="video-card-grid carousel-track" id="cases-carousel" tabindex="0" aria-label="Raccolta dei Casi Impossibili">
+                  <article class="video-card case-card">
+                    <a href="https://www.youtube.com/shorts/Te0BZPPb0Kw" target="_blank" rel="noopener noreferrer" aria-label="Apri il Caso Impossibile 1 su YouTube">
+                      <div class="video-thumb"><img src="https://i.ytimg.com/vi/Te0BZPPb0Kw/hqdefault.jpg" alt="Copertina del Caso Impossibile 1" width="480" height="360" loading="lazy" /><span class="content-badge case-badge">Caso 1</span><span class="play-badge" aria-hidden="true">▶</span></div>
+                      <div class="video-copy"><h4>Perché ringrazia dopo una pistola?</h4><span class="button button-primary">Apri il Caso</span></div>
+                    </a>
+                  </article>
+                  <article class="video-card case-card">
+                    <a href="https://www.youtube.com/shorts/NO4c37TQB2g" target="_blank" rel="noopener noreferrer" aria-label="Apri il Caso Impossibile 2 su YouTube">
+                      <div class="video-thumb"><img src="https://i.ytimg.com/vi/NO4c37TQB2g/hqdefault.jpg" alt="Copertina del Caso Impossibile 2" width="480" height="360" loading="lazy" /><span class="content-badge case-badge">Caso 2</span><span class="play-badge" aria-hidden="true">▶</span></div>
+                      <div class="video-copy"><h4>Perché arriva al decimo piano solo quando piove?</h4><span class="button button-primary">Apri il Caso</span></div>
+                    </a>
+                  </article>
+                  <article class="video-card case-card">
+                    <a href="https://www.youtube.com/shorts/jXhB_4Ksw4E" target="_blank" rel="noopener noreferrer" aria-label="Apri il Caso Impossibile 3 su YouTube">
+                      <div class="video-thumb"><img src="https://i.ytimg.com/vi/jXhB_4Ksw4E/hqdefault.jpg" alt="Copertina del Caso Impossibile 3" width="480" height="360" loading="lazy" /><span class="content-badge case-badge">Caso 3</span><span class="play-badge" aria-hidden="true">▶</span></div>
+                      <div class="video-copy"><h4>Stessa bibita: uno vive, l’altro muore. Perché?</h4><span class="button button-primary">Apri il Caso</span></div>
+                    </a>
+                  </article>
+                </div>
+                <button class="carousel-button carousel-button-next" type="button" aria-label="Altri Casi Impossibili" aria-controls="cases-carousel" disabled><span aria-hidden="true">›</span></button>
+              </div>
+              <a class="play-collection-link" href="https://www.youtube.com/playlist?list=PLZn339Wxx0XM" target="_blank" rel="noopener noreferrer">Tutti i Casi Impossibili <span aria-hidden="true">→</span></a>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="coming downloads section-space" id="scarica" aria-labelledby="downloads-title">
+        <div class="container">
+          <header class="section-heading">
+            <p class="eyebrow">Gioca, scarica, crea</p>
+            <h2 id="downloads-title">Continua l’avventura a casa</h2>
+            <p>Una nuova stanza di CasAvventura sta prendendo forma: qui troverai modi nuovi per giocare anche fuori dallo schermo.</p>
+          </header>
+          <div class="coming-grid">
+            <article class="coming-card coming-card-download">
+              <div class="download-copy">
+                <span class="coming-label">In preparazione</span>
+                <span class="coming-icon" aria-hidden="true">✦</span>
+                <h3>Giochi, disegni e missioni da portare a casa</h3>
+                <p>Stiamo preparando:</p>
+                <ul class="download-list">
+                  <li>giochi online da risolvere insieme;</li>
+                  <li>disegni, schede e missioni da stampare;</li>
+                  <li>in futuro, kit speciali di CasAvventura.</li>
+                </ul>
+              </div>
+              <div class="download-characters" aria-hidden="true">
+                <img class="download-bimbi" src="referenza/bimbidelrio.png" alt="" width="1086" height="1448" loading="lazy" />
+                <img class="download-jasper" src="referenza/gatto%20jasper.png" alt="" width="1086" height="1448" loading="lazy" />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+<section class="community" id="entra" aria-labelledby="community-title">
         <div class="community-art" aria-hidden="true"><img src="referenza/footer.png" alt="" width="2172" height="724" loading="lazy" /></div>
         <div class="community-copy container">
           <h2 id="community-title">Entra anche tu in CasAvventura!</h2>
