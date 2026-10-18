@@ -2431,9 +2431,8 @@ button:focus-visible {
 }
 
 .download-jasper {
-  right: -6%;
+  right: 0;
   height: 98% !important;
-  transform: scaleX(-1);
 }
 
 @media (max-width: 900px) {
