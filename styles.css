@@ -2135,3 +2135,48 @@ button:focus-visible {
     right: -13px;
   }
 }
+
+
+/* Casi Impossibili: raccolta reale e archivio pronto a crescere */
+.cases {
+  background: #fffaf2;
+}
+
+.cases .section-heading > p:last-child,
+.downloads .section-heading > p:last-child {
+  max-width: 650px;
+  margin: 10px auto 0;
+  color: var(--color-muted);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.case-card .video-copy {
+  min-height: 185px;
+}
+
+.case-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 1;
+  background: var(--color-teal-dark);
+  color: #fff;
+}
+
+.downloads .coming-grid {
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
+}
+
+.downloads .coming-card-download {
+  min-height: 245px;
+}
+
+@media (max-width: 560px) {
+  .cases .section-heading > p:last-child,
+  .downloads .section-heading > p:last-child {
+    font-size: 16px;
+  }
+}
