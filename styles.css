@@ -2180,3 +2180,148 @@ button:focus-visible {
     font-size: 16px;
   }
 }
+
+
+/* Hub Gioca: due raccolte sorelle, una per indovinare e una per investigare */
+.play-hub {
+  background: #fffaf2;
+}
+
+.play-hub .section-heading > p:last-child,
+.downloads .section-heading > p:last-child {
+  max-width: 720px;
+  margin: 10px auto 0;
+  color: var(--color-muted);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.play-collections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 30px;
+}
+
+.play-collection {
+  min-width: 0;
+  padding: 26px;
+  border: 1px solid #eadfcd;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.play-collection-heading {
+  min-height: 148px;
+}
+
+.play-collection-heading .eyebrow {
+  margin-bottom: 7px;
+}
+
+.play-collection-heading h3 {
+  margin: 0 0 8px;
+  color: var(--color-teal-dark);
+  font-family: var(--font-display);
+  font-size: 30px;
+  line-height: 1.06;
+}
+
+.play-collection-heading > p:last-child {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 15px;
+  line-height: 1.42;
+}
+
+.play-collection .carousel-track {
+  grid-auto-columns: 100%;
+}
+
+.play-collection .carousel-button {
+  top: 50%;
+}
+
+.play-collection .video-copy {
+  min-height: 172px;
+}
+
+.play-collection .video-copy h4 {
+  flex: 1;
+  margin: 0 0 18px;
+  color: var(--color-teal-dark);
+  font-family: var(--font-display);
+  font-size: 23px;
+  line-height: 1.12;
+}
+
+.case-badge,
+.riddle-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 1;
+  background: var(--color-teal-dark);
+  color: #fff;
+}
+
+.riddle-badge {
+  background: var(--color-orange);
+}
+
+.play-collection-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  color: var(--color-orange);
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.play-collection-link:hover,
+.play-collection-link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.downloads .coming-grid {
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
+}
+
+.downloads .coming-card-download {
+  min-height: 245px;
+}
+
+@media (max-width: 900px) {
+  .play-collections {
+    grid-template-columns: 1fr;
+    max-width: 620px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .play-collection {
+    padding: 22px 18px;
+  }
+
+  .play-collection-heading {
+    min-height: 0;
+    margin-bottom: 18px;
+  }
+
+  .play-collection-heading h3 {
+    font-size: 28px;
+  }
+
+  .play-hub .section-heading > p:last-child,
+  .downloads .section-heading > p:last-child {
+    font-size: 16px;
+  }
+}
