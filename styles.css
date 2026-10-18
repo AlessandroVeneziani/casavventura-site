@@ -2023,3 +2023,115 @@ button:focus-visible {
     grid-row: 1;
   }
 }
+
+
+/* Caroselli editoriali: stessi contenuti, più spazio per le nuove uscite */
+.carousel-shell {
+  position: relative;
+}
+
+.carousel-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 40px) / 3);
+  grid-template-columns: none !important;
+  gap: 20px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 2px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track > * {
+  width: auto;
+  scroll-snap-align: start;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 2px solid var(--color-teal-dark);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--color-teal-dark);
+  font-family: Arial, sans-serif;
+  font-size: 35px;
+  line-height: 1;
+  box-shadow: 0 6px 16px rgba(7, 61, 72, .18);
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background .2s ease, color .2s ease, opacity .2s ease, transform .2s ease;
+}
+
+.carousel-button:hover:not(:disabled),
+.carousel-button:focus-visible:not(:disabled) {
+  background: var(--color-teal-dark);
+  color: #fff;
+  transform: translateY(-50%) scale(1.06);
+}
+
+.carousel-button:focus-visible {
+  outline: 3px solid var(--color-orange);
+  outline-offset: 3px;
+}
+
+.carousel-button:disabled {
+  cursor: default;
+}
+
+.carousel-shell:not(.has-overflow) .carousel-button,
+.carousel-button:disabled {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.carousel-button-prev {
+  left: -23px;
+}
+
+.carousel-button-next {
+  right: -23px;
+}
+
+.video-card-grid.carousel-track .video-card,
+.life-grid.carousel-track .life-card {
+  margin: 0;
+}
+
+@media (max-width: 1080px) {
+  .carousel-track {
+    grid-auto-columns: calc((100% - 20px) / 2);
+  }
+}
+
+@media (max-width: 780px) {
+  .carousel-track {
+    grid-auto-columns: minmax(84%, 440px);
+  }
+
+  .carousel-button {
+    width: 42px;
+    height: 42px;
+    font-size: 31px;
+  }
+
+  .carousel-button-prev {
+    left: -13px;
+  }
+
+  .carousel-button-next {
+    right: -13px;
+  }
+}
