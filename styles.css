@@ -1910,3 +1910,19 @@ button:focus-visible {
     width: 58%;
   }
 }
+
+
+/* Tablet: il testo resta sempre dentro la pergamena di benvenuto */
+@media (min-width: 781px) and (max-width: 1080px) {
+  .welcome-inner {
+    gap: 32px;
+  }
+
+  .welcome-paper p {
+    top: 51%;
+    left: 19%;
+    width: 60%;
+    font-size: clamp(10px, 1.25vw, 13px);
+    line-height: 1.23;
+  }
+}
