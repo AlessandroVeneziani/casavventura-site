@@ -18,40 +18,39 @@
     <link rel="stylesheet" href="../styles.css" />
     <style>
       .club-page{background:var(--color-cream);color:var(--color-text)}
-      .club-hero{background:linear-gradient(120deg,var(--color-teal-dark) 0%,var(--color-teal) 53%,#f2a24c 160%);color:#fff;padding:clamp(64px,10vw,122px) 0 72px;overflow:hidden;position:relative}
-      .club-hero:after{content:"";position:absolute;width:420px;height:420px;border:3px dashed rgba(255,255,255,.24);border-radius:50%;right:-110px;top:-105px}
+      .club-hero{background:linear-gradient(108deg,#073d48 0%,#005260 61%,#08707a 100%);color:#fff;padding:clamp(64px,9vw,112px) 0 76px;overflow:hidden;position:relative}
+      .club-hero:after{content:"";position:absolute;width:470px;height:470px;border:3px dashed rgba(255,255,255,.18);border-radius:50%;right:-130px;top:-125px}
       .club-hero-inner{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr);gap:32px;align-items:center;position:relative;z-index:1}
-      .club-kicker{margin:0 0 13px;color:#ffd36f;font-weight:800;font-size:.78rem;letter-spacing:.13em;text-transform:uppercase}
-      .club-hero h1{font-family:var(--font-display);font-size:clamp(2.8rem,6vw,5.5rem);line-height:.92;letter-spacing:-.065em;margin:0 0 20px}
-      .club-hero h1 span{color:#ffb046}
-      .club-intro{font-size:clamp(1.05rem,2vw,1.33rem);line-height:1.45;max-width:620px;margin:0 0 26px}
+      .club-kicker{margin:0 0 13px;color:#ffb046;font-family:var(--font-display);font-weight:700;font-size:.92rem;letter-spacing:.08em;text-transform:uppercase}
+      .club-hero h1{font-family:var(--font-display);font-size:clamp(3.25rem,5.2vw,5rem);font-weight:700;line-height:.94;letter-spacing:-.04em;margin:0 0 22px}
+      .club-hero h1 span{color:#ffb046;text-shadow:0 2px 0 rgba(7,61,72,.22)}
+      .club-intro{font-family:var(--font-body);font-size:clamp(1.08rem,1.65vw,1.28rem);font-weight:600;line-height:1.5;max-width:650px;margin:0 0 28px}
       .club-hero-art{position:relative;min-height:300px;display:flex;align-items:end;justify-content:center}
       .club-hero-art img{width:min(100%,470px);height:auto;filter:drop-shadow(0 20px 24px rgba(0,0,0,.22));position:relative;z-index:1}
-      .club-stamp{position:absolute;right:4%;top:5%;display:grid;place-items:center;width:132px;aspect-ratio:1;background:#fff5d7;color:var(--color-teal-dark);border:2px solid rgba(7,61,72,.13);border-radius:50%;font-family:var(--font-handwritten);font-size:1.08rem;font-weight:700;line-height:1.02;padding:18px;text-align:center;transform:rotate(8deg);box-shadow:0 8px 16px rgba(0,0,0,.15)}
-      .club-section{padding:clamp(54px,8vw,96px) 0}
+      .club-stamp{position:absolute;right:4%;top:5%;display:grid;place-items:center;width:132px;aspect-ratio:1;background:#fff5d7;color:#073d48;border:2px dashed rgba(7,61,72,.4);border-radius:50%;font-family:var(--font-handwritten);font-size:1.08rem;font-weight:700;line-height:1.02;padding:18px;text-align:center;transform:rotate(8deg);box-shadow:0 8px 16px rgba(0,0,0,.15)}
+      .club-section{padding:clamp(56px,7vw,92px) 0;position:relative;overflow:hidden}
       .club-heading{max-width:720px;margin:0 auto 34px;text-align:center}
-      .club-heading h2{font-family:var(--font-display);font-size:clamp(2.15rem,4.5vw,3.7rem);line-height:.96;letter-spacing:-.06em;margin:0 0 14px;color:var(--color-teal)}
+      .club-heading h2{font-family:var(--font-display);font-size:clamp(2.3rem,4.1vw,3.65rem);font-weight:700;line-height:.98;letter-spacing:-.035em;margin:0 0 14px;color:var(--color-teal-dark)}
       .club-heading p{font-size:1.07rem;margin:0}
       .club-role-grid,.club-next-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-      .club-role,.club-next{background:#fff;border:1px solid rgba(14,76,90,.12);border-radius:18px;padding:25px;box-shadow:0 8px 24px rgba(20,62,72,.08)}
+      .club-role,.club-next{min-width:0;background:#fff;border:1px solid rgba(14,76,90,.12);border-radius:18px;padding:25px;box-shadow:0 8px 24px rgba(20,62,72,.08)}
       .club-role-icon{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#f8d475;color:var(--color-teal);font-weight:900;font-size:1.5rem;margin-bottom:18px}
       .club-role:nth-child(2) .club-role-icon{background:#ffd0b4}.club-role:nth-child(3) .club-role-icon{background:#b9ddd5}
-      .club-role h3,.club-next h3{font-family:var(--font-display);margin:0 0 8px;font-size:1.28rem;color:var(--color-teal)}
-      .club-role p,.club-next p{margin:0;line-height:1.5}
-      .club-pact{background:#f1e4bd;position:relative;overflow:hidden}
-      .club-pact:before{content:"✦  ✦  ✦";position:absolute;left:6%;top:10%;font-size:2rem;color:rgba(243,107,33,.35);letter-spacing:1rem}
-      .club-pact-inner{max-width:850px;margin:auto;position:relative}
+      .club-role h3,.club-next h3{font-family:var(--font-display);margin:0 0 8px;font-size:1.28rem;color:var(--color-teal-dark)}
+      .club-role p,.club-next p{margin:0;line-height:1.5}.club-role{display:flex;flex-direction:column}.club-role .club-link{display:inline-flex;align-items:center;gap:8px;margin-top:18px;color:var(--color-orange);font-family:var(--font-display);font-weight:700}.club-role .club-link:hover{text-decoration:underline}.club-next{border-top:5px solid var(--color-orange)}.club-next:nth-child(2){border-color:#f6b522}.club-next:nth-child(3){border-color:var(--color-teal)}
+      .club-pact{background:var(--color-cream);border-block:1px solid #e8e0d0;position:relative;overflow:hidden}
+      .club-pact:before{content:"";position:absolute;left:-38px;top:44px;width:158px;height:158px;background:url("../referenza/zampa.png") center/contain no-repeat;opacity:.14;transform:rotate(-18deg)}
+      .club-pact-inner{max-width:850px;margin:auto;position:relative}.club-pact-inner:after{content:"";position:absolute;right:-80px;bottom:-82px;width:190px;height:190px;background:url("../referenza/lampadina.png") center/contain no-repeat;opacity:.16;transform:rotate(14deg)}
       .club-pact-list{display:grid;gap:12px;margin:28px 0 0;padding:0;list-style:none}
-      .club-pact-list li{background:rgba(255,253,248,.8);border-radius:12px;padding:17px 20px;font-size:1.05rem}
+      .club-pact-list li{position:relative;background:#fff;border:1px solid #ece5d8;border-radius:12px;padding:17px 20px;font-size:1.05rem;box-shadow:0 7px 18px rgba(7,61,72,.05)}
       .club-pact-list strong{color:var(--color-orange)}
       .club-now{background:#fff}
-      .club-next{border-top:5px solid var(--color-orange)}.club-next:nth-child(2){border-color:#f6b522}.club-next:nth-child(3){border-color:var(--color-teal)}
-      .club-final{background:var(--color-teal);color:#fff;text-align:center;padding:clamp(58px,9vw,100px) 0}
+      .club-final{background:linear-gradient(112deg,#073d48 0%,#005260 100%);color:#fff;text-align:center;padding:clamp(58px,9vw,100px) 0;position:relative;overflow:hidden}
       .club-final h2{font-family:var(--font-display);font-size:clamp(2.2rem,5vw,4rem);line-height:.96;letter-spacing:-.06em;margin:0 0 16px}
       .club-final p{max-width:620px;margin:0 auto 24px;font-size:1.1rem}
-      .club-final .button-secondary{background:#fff;color:var(--color-teal)}
-      .club-back{display:inline-flex;margin-bottom:22px;color:#fff;font-weight:800;text-decoration:none}.club-back:hover{text-decoration:underline}
-      @media(max-width:760px){.club-hero-inner{grid-template-columns:1fr}.club-hero-art{min-height:220px}.club-hero-art img{max-width:380px}.club-role-grid,.club-next-grid{grid-template-columns:1fr}.club-stamp{right:0;width:112px;font-size:.96rem}.club-section{padding:58px 0}}
+      .club-final .button-secondary{background:#fff;color:var(--color-teal-dark)}
+      .club-back{display:inline-flex;margin-bottom:22px;color:#fff;font-family:var(--font-display);font-weight:700;text-decoration:none}.club-back:hover{text-decoration:underline}.club-doodle{position:absolute;z-index:0;pointer-events:none;object-fit:contain}.club-doodle-paw{width:58px;left:7%;bottom:13%;transform:rotate(-16deg)}.club-doodle-bulb{width:64px;right:7%;bottom:16%;transform:rotate(12deg)}.club-role-grid,.club-next-grid,.club-heading,.club-pact-inner{position:relative;z-index:1}
+      @media(max-width:760px){.club-hero-inner{grid-template-columns:1fr}.club-hero-art{min-height:220px}.club-hero-art img{max-width:380px}.club-role-grid,.club-next-grid{grid-template-columns:1fr}.club-stamp{right:0;width:112px;font-size:.96rem}.club-doodle{display:none}.club-section{padding:58px 0}.club-pact-inner:after{width:125px;height:125px;right:-58px;bottom:-50px}}
     </style>
   </head>
   <body class="club-page">
@@ -67,12 +66,14 @@
 
     <main id="main-content">
       <section class="club-hero">
+        <img class="club-doodle club-doodle-paw" src="../referenza/zampa.png" alt="" aria-hidden="true" />
+        <img class="club-doodle club-doodle-bulb" src="../referenza/lampadina.png" alt="" aria-hidden="true" />
         <div class="container club-hero-inner">
           <div>
             <a class="club-back" href="../#chi-ci-vive">← Torna alla Casa</a>
             <p class="club-kicker">La community della Casa</p>
             <h1>Diventa anche tu<br /><span>un CasAvventura.</span></h1>
-            <p class="club-intro">Qui non sei soltanto uno spettatore. Sei l'amico segreto di Alex, Bimbi e Jasper: osservi gli indizi, proponi idee e aiuti a scegliere la prossima avventura.</p>
+            <p class="club-intro">Qui guardi, giochi e fai sentire la tua voce. Segui gli indizi insieme ad Alex, Bimbi e Jasper: ogni teoria può aprire una nuova avventura.</p>
             <a class="button button-primary" href="https://www.youtube.com/@CasAvventura" target="_blank" rel="noopener noreferrer">Entra dalla prossima Missione <span aria-hidden="true">→</span></a>
           </div>
           <div class="club-hero-art">
@@ -86,13 +87,13 @@
         <div class="container">
           <header class="club-heading">
             <p class="eyebrow">Il tuo posto nella Casa</p>
-            <h2>Ogni avventura ha bisogno anche di te.</h2>
-            <p>Non devi essere perfetto: basta essere curioso, gentile e pronto a guardare le cose da un punto di vista un po' più sorprendente.</p>
+            <h2>Da dove vuoi iniziare?</h2>
+            <p>Non serve sapere già tutto: scegli una porta, porta la tua curiosità e vediamo dove conduce.</p>
           </header>
           <div class="club-role-grid">
-            <article class="club-role"><span class="club-role-icon" aria-hidden="true">⌕</span><h3>Osserva</h3><p>Cerca i dettagli, ascolta gli indizi e prova a capire cosa è successo prima degli altri.</p></article>
-            <article class="club-role"><span class="club-role-icon" aria-hidden="true">✦</span><h3>Immagina</h3><p>Porta le tue teorie, idee e domande: nella Casa una buona idea può sempre aprire una nuova porta.</p></article>
-            <article class="club-role"><span class="club-role-icon" aria-hidden="true">♥</span><h3>Gioca insieme</h3><p>Commenta, indovina e condividi il divertimento. Le Missioni sono più belle quando diventano di tutti.</p></article>
+            <article class="club-role"><span class="club-role-icon" aria-hidden="true">⌕</span><h3>Guarda le Missioni</h3><p>Entra nella Casa, segui gli indizi e scopri quale mistero stanno cercando di risolvere Alex, Bimbi e Jasper.</p><a class="club-link" href="https://www.youtube.com/@CasAvventura" target="_blank" rel="noopener noreferrer">Apri la prossima porta <span aria-hidden="true">→</span></a></article>
+            <article class="club-role"><span class="club-role-icon" aria-hidden="true">✦</span><h3>Gioca e indovina</h3><p>Indovinelli e Casi Impossibili aspettano le tue teorie. Bimbi e Jasper non saranno sempre d'accordo con te.</p><a class="club-link" href="https://www.youtube.com/@CasAvventura/shorts" target="_blank" rel="noopener noreferrer">Prova un gioco <span aria-hidden="true">→</span></a></article>
+            <article class="club-role"><span class="club-role-icon" aria-hidden="true">♥</span><h3>Lascia la tua teoria</h3><p>Commenta le puntate, fai domande e raccontaci cosa avresti fatto tu: le Missioni sono più belle quando diventano di tutti.</p><a class="club-link" href="https://www.youtube.com/@CasAvventura" target="_blank" rel="noopener noreferrer">Vai al canale <span aria-hidden="true">→</span></a></article>
           </div>
         </div>
       </section>
@@ -114,23 +115,24 @@
       <section class="club-section club-now">
         <div class="container">
           <header class="club-heading">
-            <p class="eyebrow">Cosa puoi fare già adesso</p>
-            <h2>L'avventura è già cominciata.</h2>
+            <p class="eyebrow">Tra una Missione e l'altra</p>
+            <h2>La Casa è viva.</h2>
+            <p>Qui anche le giornate più normali possono prendere una piega del tutto inaspettata.</p>
           </header>
           <div class="club-next-grid">
-            <article class="club-next"><h3>Guarda le Missioni</h3><p>Entra nella Casa, segui gli indizi e scopri quale mistero stanno cercando di risolvere Alex, Bimbi e Jasper.</p></article>
-            <article class="club-next"><h3>Rispondi ai giochi</h3><p>Indovinelli e Casi Impossibili aspettano le tue teorie: Bimbi e Jasper non saranno sempre d'accordo con te.</p></article>
-            <article class="club-next"><h3>Segui la vita della Casa</h3><p>Tra una Missione e l'altra, succede sempre qualcosa: soprattutto quando Bimbi decide di organizzare tutto.</p></article>
+            <article class="club-next"><h3>Bimbi ha un piano</h3><p>Può essere una spesa, una passeggiata o una nuova organizzazione della Casa. Bimbi è già convinta che sia un'ottima idea.</p></article>
+            <article class="club-next"><h3>Jasper osserva</h3><p>Con impeccabile compostezza, Jasper valuta ogni piano. E quasi sempre sa qualcosa che gli altri non hanno ancora notato.</p></article>
+            <article class="club-next"><h3>Eugenio prova a riportare la logica</h3><p>Il vicino razionale arriva per aiutare Alex. Poi scopre che, a CasAvventura, la normalità dura pochissimo.</p></article>
           </div>
         </div>
       </section>
 
       <section class="club-final">
         <div class="container">
-          <p class="eyebrow" style="color:#ffd36f">Presto nella Casa</p>
-          <h2>Live, giochi da stampare<br />ed esperienze dal vivo.</h2>
-          <p>Stiamo preparando nuovi modi per entrare nell'universo CasAvventura. Per ora, il posto migliore da cui partire è la prossima puntata.</p>
-          <a class="button button-secondary" href="https://www.youtube.com/@CasAvventura" target="_blank" rel="noopener noreferrer">Vai al canale YouTube <span aria-hidden="true">→</span></a>
+          <p class="eyebrow" style="color:#ffb046">La prossima avventura ti aspetta</p>
+          <h2>Entra nella Casa.<br />Gioca insieme a noi.</h2>
+          <p>Iscriviti al canale, guarda le Missioni e lascia la tua teoria: il prossimo indizio potrebbe essere proprio per te.</p>
+          <a class="button button-secondary" href="https://www.youtube.com/@CasAvventura?sub_confirmation=1" target="_blank" rel="noopener noreferrer">Iscriviti a CasAvventura <span aria-hidden="true">→</span></a>
         </div>
       </section>
     </main>
