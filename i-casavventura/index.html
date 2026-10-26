@@ -33,11 +33,11 @@
       .club-heading h2{font-family:var(--font-display);font-size:clamp(2.3rem,4.1vw,3.65rem);font-weight:700;line-height:.98;letter-spacing:-.035em;margin:0 0 14px;color:var(--color-teal-dark)}
       .club-heading p{font-size:1.07rem;margin:0}
       .club-role-grid,.club-next-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-      .club-role,.club-next{background:#fff;border:1px solid rgba(14,76,90,.12);border-radius:18px;padding:25px;box-shadow:0 8px 24px rgba(20,62,72,.08)}
+      .club-role,.club-next{min-width:0;background:#fff;border:1px solid rgba(14,76,90,.12);border-radius:18px;padding:25px;box-shadow:0 8px 24px rgba(20,62,72,.08)}
       .club-role-icon{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#f8d475;color:var(--color-teal);font-weight:900;font-size:1.5rem;margin-bottom:18px}
       .club-role:nth-child(2) .club-role-icon{background:#ffd0b4}.club-role:nth-child(3) .club-role-icon{background:#b9ddd5}
-      .club-role h3,.club-next h3{font-family:var(--font-display);margin:0 0 8px;font-size:1.28rem;color:var(--color-teal)}
-      .club-role p,.club-next p{margin:0;line-height:1.5}
+      .club-role h3,.club-next h3{font-family:var(--font-display);margin:0 0 8px;font-size:1.28rem;color:var(--color-teal-dark)}
+      .club-role p,.club-next p{margin:0;line-height:1.5}.club-role{display:flex;flex-direction:column}.club-role .club-link{display:inline-flex;align-items:center;gap:8px;margin-top:18px;color:var(--color-orange);font-family:var(--font-display);font-weight:700}.club-role .club-link:hover{text-decoration:underline}.club-next{border-top:5px solid var(--color-orange)}.club-next:nth-child(2){border-color:#f6b522}.club-next:nth-child(3){border-color:var(--color-teal)}
       .club-pact{background:var(--color-cream);border-block:1px solid #e8e0d0;position:relative;overflow:hidden}
       .club-pact:before{content:"";position:absolute;left:-38px;top:44px;width:158px;height:158px;background:url("../referenza/zampa.png") center/contain no-repeat;opacity:.14;transform:rotate(-18deg)}
       .club-pact-inner{max-width:850px;margin:auto;position:relative}.club-pact-inner:after{content:"";position:absolute;right:-80px;bottom:-82px;width:190px;height:190px;background:url("../referenza/lampadina.png") center/contain no-repeat;opacity:.16;transform:rotate(14deg)}
@@ -45,7 +45,6 @@
       .club-pact-list li{position:relative;background:#fff;border:1px solid #ece5d8;border-radius:12px;padding:17px 20px;font-size:1.05rem;box-shadow:0 7px 18px rgba(7,61,72,.05)}
       .club-pact-list strong{color:var(--color-orange)}
       .club-now{background:#fff}
-      .club-next{border-top:5px solid var(--color-orange)}.club-next:nth-child(2){border-color:#f6b522}.club-next:nth-child(3){border-color:var(--color-teal)}
       .club-final{background:linear-gradient(112deg,#073d48 0%,#005260 100%);color:#fff;text-align:center;padding:clamp(58px,9vw,100px) 0;position:relative;overflow:hidden}
       .club-final h2{font-family:var(--font-display);font-size:clamp(2.2rem,5vw,4rem);line-height:.96;letter-spacing:-.06em;margin:0 0 16px}
       .club-final p{max-width:620px;margin:0 auto 24px;font-size:1.1rem}
@@ -74,7 +73,7 @@
             <a class="club-back" href="../#chi-ci-vive">← Torna alla Casa</a>
             <p class="club-kicker">La community della Casa</p>
             <h1>Diventa anche tu<br /><span>un CasAvventura.</span></h1>
-            <p class="club-intro">Qui non sei soltanto uno spettatore. Sei l'amico segreto di Alex, Bimbi e Jasper: osservi gli indizi, proponi idee e aiuti a scegliere la prossima avventura.</p>
+            <p class="club-intro">Qui guardi, giochi e fai sentire la tua voce. Segui gli indizi insieme ad Alex, Bimbi e Jasper: ogni teoria può aprire una nuova avventura.</p>
             <a class="button button-primary" href="https://www.youtube.com/@CasAvventura" target="_blank" rel="noopener noreferrer">Entra dalla prossima Missione <span aria-hidden="true">→</span></a>
           </div>
           <div class="club-hero-art">
@@ -88,13 +87,13 @@
         <div class="container">
           <header class="club-heading">
             <p class="eyebrow">Il tuo posto nella Casa</p>
-            <h2>Ogni avventura ha bisogno anche di te.</h2>
-            <p>Non devi essere perfetto: basta essere curioso, gentile e pronto a guardare le cose da un punto di vista un po' più sorprendente.</p>
+            <h2>Da dove vuoi iniziare?</h2>
+            <p>Non serve sapere già tutto: scegli una porta, porta la tua curiosità e vediamo dove conduce.</p>
           </header>
           <div class="club-role-grid">
-            <article class="club-role"><span class="club-role-icon" aria-hidden="true">⌕</span><h3>Osserva</h3><p>Cerca i dettagli, ascolta gli indizi e prova a capire cosa è successo prima degli altri.</p></article>
-            <article class="club-role"><span class="club-role-icon" aria-hidden="true">✦</span><h3>Immagina</h3><p>Porta le tue teorie, idee e domande: nella Casa una buona idea può sempre aprire una nuova porta.</p></article>
-            <article class="club-role"><span class="club-role-icon" aria-hidden="true">♥</span><h3>Gioca insieme</h3><p>Commenta, indovina e condividi il divertimento. Le Missioni sono più belle quando diventano di tutti.</p></article>
+            <article class="club-role"><span class="club-role-icon" aria-hidden="true">⌕</span><h3>Guarda le Missioni</h3><p>Entra nella Casa, segui gli indizi e scopri quale mistero stanno cercando di risolvere Alex, Bimbi e Jasper.</p><a class="club-link" href="https://www.youtube.com/@CasAvventura" target="_blank" rel="noopener noreferrer">Apri la prossima porta <span aria-hidden="true">→</span></a></article>
+            <article class="club-role"><span class="club-role-icon" aria-hidden="true">✦</span><h3>Gioca e indovina</h3><p>Indovinelli e Casi Impossibili aspettano le tue teorie. Bimbi e Jasper non saranno sempre d'accordo con te.</p><a class="club-link" href="https://www.youtube.com/@CasAvventura/shorts" target="_blank" rel="noopener noreferrer">Prova un gioco <span aria-hidden="true">→</span></a></article>
+            <article class="club-role"><span class="club-role-icon" aria-hidden="true">♥</span><h3>Lascia la tua teoria</h3><p>Commenta le puntate, fai domande e raccontaci cosa avresti fatto tu: le Missioni sono più belle quando diventano di tutti.</p><a class="club-link" href="https://www.youtube.com/@CasAvventura" target="_blank" rel="noopener noreferrer">Vai al canale <span aria-hidden="true">→</span></a></article>
           </div>
         </div>
       </section>
@@ -116,23 +115,24 @@
       <section class="club-section club-now">
         <div class="container">
           <header class="club-heading">
-            <p class="eyebrow">Cosa puoi fare già adesso</p>
-            <h2>L'avventura è già cominciata.</h2>
+            <p class="eyebrow">Tra una Missione e l'altra</p>
+            <h2>La Casa è viva.</h2>
+            <p>Qui anche le giornate più normali possono prendere una piega del tutto inaspettata.</p>
           </header>
           <div class="club-next-grid">
-            <article class="club-next"><h3>Guarda le Missioni</h3><p>Entra nella Casa, segui gli indizi e scopri quale mistero stanno cercando di risolvere Alex, Bimbi e Jasper.</p></article>
-            <article class="club-next"><h3>Rispondi ai giochi</h3><p>Indovinelli e Casi Impossibili aspettano le tue teorie: Bimbi e Jasper non saranno sempre d'accordo con te.</p></article>
-            <article class="club-next"><h3>Segui la vita della Casa</h3><p>Tra una Missione e l'altra, succede sempre qualcosa: soprattutto quando Bimbi decide di organizzare tutto.</p></article>
+            <article class="club-next"><h3>Bimbi ha un piano</h3><p>Può essere una spesa, una passeggiata o una nuova organizzazione della Casa. Bimbi è già convinta che sia un'ottima idea.</p></article>
+            <article class="club-next"><h3>Jasper osserva</h3><p>Con impeccabile compostezza, Jasper valuta ogni piano. E quasi sempre sa qualcosa che gli altri non hanno ancora notato.</p></article>
+            <article class="club-next"><h3>Eugenio prova a riportare la logica</h3><p>Il vicino razionale arriva per aiutare Alex. Poi scopre che, a CasAvventura, la normalità dura pochissimo.</p></article>
           </div>
         </div>
       </section>
 
       <section class="club-final">
         <div class="container">
-          <p class="eyebrow" style="color:#ffd36f">Presto nella Casa</p>
-          <h2>Live, giochi da stampare<br />ed esperienze dal vivo.</h2>
-          <p>Stiamo preparando nuovi modi per entrare nell'universo CasAvventura. Per ora, il posto migliore da cui partire è la prossima puntata.</p>
-          <a class="button button-secondary" href="https://www.youtube.com/@CasAvventura" target="_blank" rel="noopener noreferrer">Vai al canale YouTube <span aria-hidden="true">→</span></a>
+          <p class="eyebrow" style="color:#ffb046">La prossima avventura ti aspetta</p>
+          <h2>Entra nella Casa.<br />Gioca insieme a noi.</h2>
+          <p>Iscriviti al canale, guarda le Missioni e lascia la tua teoria: il prossimo indizio potrebbe essere proprio per te.</p>
+          <a class="button button-secondary" href="https://www.youtube.com/@CasAvventura?sub_confirmation=1" target="_blank" rel="noopener noreferrer">Iscriviti a CasAvventura <span aria-hidden="true">→</span></a>
         </div>
       </section>
     </main>
