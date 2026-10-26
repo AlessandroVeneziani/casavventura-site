@@ -2555,3 +2555,17 @@ button:focus-visible {
     border-radius: 16px;
   }
 }
+
+
+/* I CasAvventura — community invitation on the home */
+.community-ribbon{background:linear-gradient(117deg,#0b4b59 0%,#117781 62%,#f29d47 155%);color:#fff;overflow:hidden;position:relative}
+.community-ribbon:before{content:"";position:absolute;width:360px;height:360px;border:2px dashed rgba(255,255,255,.25);border-radius:50%;right:-80px;top:-135px}
+.community-ribbon-inner{min-height:340px;display:flex;align-items:center;justify-content:space-between;gap:48px;padding:62px 10.5%;position:relative}
+.community-ribbon-copy{max-width:690px;position:relative;z-index:1}
+.community-ribbon .eyebrow{color:#ffe081}
+.community-ribbon h2{font-size:clamp(2.1rem,4.4vw,4.05rem);line-height:.95;letter-spacing:-.065em;margin:0 0 17px;color:#fff}
+.community-ribbon h2 span{color:#ffb046}
+.community-ribbon-copy>p:not(.eyebrow){max-width:620px;font-size:1.08rem;line-height:1.48;margin:0 0 24px}
+.community-ribbon-note{flex:0 0 162px;width:162px;height:162px;border-radius:50%;border:3px dashed rgba(255,255,255,.68);background:#fff7dc;color:var(--teal);display:grid;place-items:center;text-align:center;transform:rotate(8deg);box-shadow:0 12px 24px rgba(0,0,0,.16);font-family:var(--brush);font-size:1.2rem;line-height:1.02;position:relative;z-index:1}
+@media (min-width:901px){.main-nav{gap:clamp(13px,1.45vw,26px)}.main-nav a{font-size:clamp(.66rem,.83vw,.78rem)}.header-cta{padding-inline:clamp(12px,1.3vw,19px);font-size:clamp(.66rem,.83vw,.78rem)}}
+@media (max-width:760px){.community-ribbon-inner{padding:54px 0;min-height:0}.community-ribbon-note{display:none}.community-ribbon h2{font-size:2.45rem}.community-ribbon-copy>p:not(.eyebrow){font-size:1rem}}
