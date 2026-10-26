@@ -17,41 +17,41 @@
     <link rel="icon" href="../favicon.svg" />
     <link rel="stylesheet" href="../styles.css" />
     <style>
-      .club-page{background:var(--cream);color:var(--ink)}
-      .club-hero{background:linear-gradient(120deg,#0b4957 0%,#0e6470 53%,#f2a24c 160%);color:#fff;padding:clamp(64px,10vw,122px) 0 72px;overflow:hidden;position:relative}
+      .club-page{background:var(--color-cream);color:var(--color-text)}
+      .club-hero{background:linear-gradient(120deg,var(--color-teal-dark) 0%,var(--color-teal) 53%,#f2a24c 160%);color:#fff;padding:clamp(64px,10vw,122px) 0 72px;overflow:hidden;position:relative}
       .club-hero:after{content:"";position:absolute;width:420px;height:420px;border:3px dashed rgba(255,255,255,.24);border-radius:50%;right:-110px;top:-105px}
       .club-hero-inner{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr);gap:32px;align-items:center;position:relative;z-index:1}
       .club-kicker{margin:0 0 13px;color:#ffd36f;font-weight:800;font-size:.78rem;letter-spacing:.13em;text-transform:uppercase}
-      .club-hero h1{font-size:clamp(2.8rem,6vw,5.5rem);line-height:.92;letter-spacing:-.065em;margin:0 0 20px}
+      .club-hero h1{font-family:var(--font-display);font-size:clamp(2.8rem,6vw,5.5rem);line-height:.92;letter-spacing:-.065em;margin:0 0 20px}
       .club-hero h1 span{color:#ffb046}
       .club-intro{font-size:clamp(1.05rem,2vw,1.33rem);line-height:1.45;max-width:620px;margin:0 0 26px}
       .club-hero-art{position:relative;min-height:300px;display:flex;align-items:end;justify-content:center}
       .club-hero-art img{width:min(100%,470px);height:auto;filter:drop-shadow(0 20px 24px rgba(0,0,0,.22));position:relative;z-index:1}
-      .club-stamp{position:absolute;right:4%;top:5%;background:#fff5d7;color:var(--teal);font-family:var(--brush);font-size:1rem;line-height:1.08;padding:18px 16px;text-align:center;transform:rotate(8deg);box-shadow:0 8px 16px rgba(0,0,0,.15)}
+      .club-stamp{position:absolute;right:4%;top:5%;display:grid;place-items:center;width:132px;aspect-ratio:1;background:#fff5d7;color:var(--color-teal-dark);border:2px solid rgba(7,61,72,.13);border-radius:50%;font-family:var(--font-handwritten);font-size:1.08rem;font-weight:700;line-height:1.02;padding:18px;text-align:center;transform:rotate(8deg);box-shadow:0 8px 16px rgba(0,0,0,.15)}
       .club-section{padding:clamp(54px,8vw,96px) 0}
       .club-heading{max-width:720px;margin:0 auto 34px;text-align:center}
-      .club-heading h2{font-size:clamp(2.15rem,4.5vw,3.7rem);line-height:.96;letter-spacing:-.06em;margin:0 0 14px;color:var(--teal)}
+      .club-heading h2{font-family:var(--font-display);font-size:clamp(2.15rem,4.5vw,3.7rem);line-height:.96;letter-spacing:-.06em;margin:0 0 14px;color:var(--color-teal)}
       .club-heading p{font-size:1.07rem;margin:0}
       .club-role-grid,.club-next-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
       .club-role,.club-next{background:#fff;border:1px solid rgba(14,76,90,.12);border-radius:18px;padding:25px;box-shadow:0 8px 24px rgba(20,62,72,.08)}
-      .club-role-icon{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#f8d475;color:var(--teal);font-weight:900;font-size:1.5rem;margin-bottom:18px}
+      .club-role-icon{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#f8d475;color:var(--color-teal);font-weight:900;font-size:1.5rem;margin-bottom:18px}
       .club-role:nth-child(2) .club-role-icon{background:#ffd0b4}.club-role:nth-child(3) .club-role-icon{background:#b9ddd5}
-      .club-role h3,.club-next h3{margin:0 0 8px;font-size:1.28rem;color:var(--teal)}
+      .club-role h3,.club-next h3{font-family:var(--font-display);margin:0 0 8px;font-size:1.28rem;color:var(--color-teal)}
       .club-role p,.club-next p{margin:0;line-height:1.5}
       .club-pact{background:#f1e4bd;position:relative;overflow:hidden}
       .club-pact:before{content:"✦  ✦  ✦";position:absolute;left:6%;top:10%;font-size:2rem;color:rgba(243,107,33,.35);letter-spacing:1rem}
       .club-pact-inner{max-width:850px;margin:auto;position:relative}
       .club-pact-list{display:grid;gap:12px;margin:28px 0 0;padding:0;list-style:none}
       .club-pact-list li{background:rgba(255,253,248,.8);border-radius:12px;padding:17px 20px;font-size:1.05rem}
-      .club-pact-list strong{color:var(--orange)}
+      .club-pact-list strong{color:var(--color-orange)}
       .club-now{background:#fff}
-      .club-next{border-top:5px solid var(--orange)}.club-next:nth-child(2){border-color:var(--yellow)}.club-next:nth-child(3){border-color:var(--teal2)}
-      .club-final{background:var(--teal);color:#fff;text-align:center;padding:clamp(58px,9vw,100px) 0}
-      .club-final h2{font-size:clamp(2.2rem,5vw,4rem);line-height:.96;letter-spacing:-.06em;margin:0 0 16px}
+      .club-next{border-top:5px solid var(--color-orange)}.club-next:nth-child(2){border-color:#f6b522}.club-next:nth-child(3){border-color:var(--color-teal)}
+      .club-final{background:var(--color-teal);color:#fff;text-align:center;padding:clamp(58px,9vw,100px) 0}
+      .club-final h2{font-family:var(--font-display);font-size:clamp(2.2rem,5vw,4rem);line-height:.96;letter-spacing:-.06em;margin:0 0 16px}
       .club-final p{max-width:620px;margin:0 auto 24px;font-size:1.1rem}
-      .club-final .button-secondary{background:#fff;color:var(--teal)}
+      .club-final .button-secondary{background:#fff;color:var(--color-teal)}
       .club-back{display:inline-flex;margin-bottom:22px;color:#fff;font-weight:800;text-decoration:none}.club-back:hover{text-decoration:underline}
-      @media(max-width:760px){.club-hero-inner{grid-template-columns:1fr}.club-hero-art{min-height:220px}.club-hero-art img{max-width:380px}.club-role-grid,.club-next-grid{grid-template-columns:1fr}.club-stamp{right:0}.club-section{padding:58px 0}}
+      @media(max-width:760px){.club-hero-inner{grid-template-columns:1fr}.club-hero-art{min-height:220px}.club-hero-art img{max-width:380px}.club-role-grid,.club-next-grid{grid-template-columns:1fr}.club-stamp{right:0;width:112px;font-size:.96rem}.club-section{padding:58px 0}}
     </style>
   </head>
   <body class="club-page">
