@@ -3014,3 +3014,12 @@ button:focus-visible {
     right: 3%;
   }
 }
+/* I CasAvventura — composizione aggiornata per Balla con noi. */
+.club-dance-approved .approved-dance-desktop {
+  aspect-ratio: 16 / 9;
+  background: #073e49 url("public/balla-con-noi-casa-viva.jpeg") center / cover no-repeat !important;
+}
+
+.club-dance-approved .approved-dance-desktop > img {
+  display: none !important;
+}
