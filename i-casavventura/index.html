@@ -38,6 +38,32 @@
     .club-life{display:grid;grid-template-columns:.84fr 1.16fr;gap:clamp(28px,5vw,76px);align-items:center}.club-life-photo{width:100%;max-width:460px;aspect-ratio:1;object-fit:cover;border-radius:37% 43% 39% 31% / 26% 30% 22% 28%;box-shadow:0 16px 30px rgba(8,72,79,.14)}.club-life h2{font-family:var(--font-display);font-size:clamp(2.25rem,4.1vw,3.8rem);line-height:.96;margin:0 0 17px;color:var(--color-teal-dark)}.club-life h2 span{color:var(--color-orange)}.club-life p{font-size:1.07rem;line-height:1.5;margin:0 0 13px}.club-life .club-hand{font-family:var(--font-handwritten);font-weight:700;color:var(--color-teal);font-size:1.05rem}
     .club-final{background:linear-gradient(112deg,#063b47,#075464);padding:clamp(60px,9vw,102px) 0;text-align:center;color:#fff}.club-final h2{font-family:var(--font-display);font-size:clamp(2.25rem,5vw,4.3rem);line-height:.95;letter-spacing:-.05em;margin:0 0 13px}.club-final p{font-size:1.1rem;margin:0 auto 25px;max-width:610px}.club-final .button-secondary{background:#fff;color:var(--color-teal-dark)}
     @media(max-width:760px){.club-hero-inner,.club-life{grid-template-columns:1fr}.club-hero-art{order:-1;min-height:250px}.club-hero-photo{max-height:340px}.club-note{right:0}.club-door-grid,.club-board-grid,.club-pact-grid{grid-template-columns:1fr}.club-pact-item{border-right:0;border-bottom:1px solid rgba(132,93,31,.2);padding-bottom:16px}.club-pact-item:last-child{border-bottom:0}.club-values{gap:11px}.club-life-photo{max-width:330px}.club-board:before{inset:9px}}
+
+    
+    /* Allineamento alla grammatica della homepage */
+    .club-hero h1,.club-heading h2,.club-life h2,.club-final h2{letter-spacing:-.018em}
+    .club-hero h1{line-height:.99;margin-bottom:28px}
+    .club-heading h2{line-height:1.02;margin-bottom:16px}
+    .club-life h2,.club-final h2{line-height:1.02;letter-spacing:-.018em}
+    .club-kicker,.club-label{letter-spacing:.045em}
+    .club-intro{line-height:1.52}
+    .club-door h3,.club-pin h3,.club-pact-item h3{line-height:1.08}
+    .club-dance{padding-top:clamp(42px,6vw,76px);padding-bottom:clamp(42px,6vw,76px);background:#fffdf8}
+    .dance-frame{position:relative;min-height:520px;display:grid;grid-template-columns:minmax(300px,.8fr) minmax(420px,1.2fr);align-items:center;overflow:hidden;padding:54px 6%;border:1px solid #d7bd88;border-radius:28px 18px 30px 20px;background:#f7e8c8 url('../public/final-band-clean-bg.png') center/cover no-repeat;box-shadow:inset 0 0 42px rgba(169,117,39,.12),0 14px 28px rgba(74,45,9,.1)}
+    .dance-frame:before{content:"";position:absolute;inset:18px;border:2px dashed rgba(6,76,91,.24);border-radius:20px;pointer-events:none}
+    .dance-copy{position:relative;z-index:2;max-width:430px;padding:14px 0 14px}
+    .dance-copy h2{margin:0 0 18px;color:var(--color-teal-dark);font-family:var(--font-display);font-size:clamp(3rem,5vw,5rem);line-height:.98;letter-spacing:-.018em}
+    .dance-copy h2 span{color:var(--color-orange)}
+    .dance-copy>p:not(.club-label){max-width:390px;margin:0 0 12px;color:var(--color-text);font-size:1.15rem;line-height:1.45}
+    .dance-copy .dance-strong{font-family:var(--font-display);font-size:1.32rem;line-height:1.15}
+    .dance-copy .button{margin-top:14px}
+    .dance-cast{position:relative;z-index:1;align-self:stretch;min-height:410px}
+    .dance-group{position:absolute;right:-4%;bottom:-8%;width:92%;max-width:none;height:108%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 15px 18px rgba(10,62,72,.17))}
+    .dance-eugenio{position:absolute;right:0;bottom:4%;z-index:2;width:34%;max-width:250px;height:auto;filter:drop-shadow(0 12px 15px rgba(10,62,72,.16));mix-blend-mode:multiply}
+    @media (min-width:1101px){.club-hero h1{font-size:62px}.club-heading h2{font-size:52px}.club-life h2{font-size:52px}.club-final h2{font-size:56px}}
+    @media (min-width:761px) and (max-width:1100px){.club-hero h1{font-size:50px}.club-heading h2{font-size:44px}.club-life h2{font-size:44px}.club-final h2{font-size:48px}.dance-frame{grid-template-columns:1fr 1.2fr;padding-inline:5%}.dance-copy h2{font-size:52px}}
+    @media (max-width:760px){.club-hero h1{font-size:42px}.club-heading h2,.club-life h2{font-size:40px}.club-final h2{font-size:42px}.club-dance{padding-top:36px}.dance-frame{display:block;min-height:690px;padding:42px 30px 250px}.dance-copy{max-width:100%}.dance-copy h2{font-size:48px}.dance-copy>p:not(.club-label){font-size:1.02rem}.dance-cast{position:absolute;right:0;bottom:0;width:100%;height:300px;min-height:0}.dance-group{right:-8%;bottom:-8%;width:88%;height:118%}.dance-eugenio{right:1%;bottom:2%;width:34%;max-width:160px}.dance-frame:before{inset:12px}}
+
   </style>
 </head>
 <body class="club-page">
@@ -107,10 +133,21 @@
       </div>
     </section>
 
-    <section class="club-section">
-      <div class="container club-life">
-        <img class="club-life-photo" src="../public/hero-casavventura.png" alt="La Casa e i personaggi di CasAvventura" />
-        <div><p class="club-label">Tra una Missione e l’altra</p><h2>La Casa è <span>viva.</span></h2><p>Bimbi ha sempre un piano. Jasper ha sempre un’opinione. Alex parte con entusiasmo. Eugenio prova a salvare la logica.</p><p><strong>E quasi mai ci riesce.</strong></p><p class="club-hand">Ogni giorno, a CasAvventura, può diventare una nuova Missione.</p></div>
+    <section class="club-section club-dance">
+      <div class="container">
+        <div class="dance-frame">
+          <div class="dance-copy">
+            <p class="club-label">LA CASA È VIVA</p>
+            <h2>Balla con <span>noi!</span></h2>
+            <p>Hai già imparato il ballo di CasAvventura?</p>
+            <p class="dance-strong">Se vuoi essere un CasAvventura, balla con noi.</p>
+            <a class="button button-primary" href="https://www.youtube.com/@CasAvventura/shorts" target="_blank" rel="noopener noreferrer">Guarda il ballo <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="dance-cast" aria-label="Alex, Eugenio, Bimbi e Jasper ballano insieme">
+            <img class="dance-group" src="../public/hero-casavventura.png" alt="Alex, Bimbi e Jasper a CasAvventura" />
+            <img class="dance-eugenio" src="../public/eugenio-card.webp" alt="Eugenio, il vicino di CasAvventura" />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -118,5 +155,32 @@
       <div class="container"><p class="club-label" style="color:#f6bd3a">La prossima avventura ti aspetta</p><h2>Entra dalla prossima <span>Missione.</span></h2><p>La Casa è aperta: la prossima avventura può cominciare da te.</p><a class="button button-secondary" href="https://www.youtube.com/playlist?list=PLPsmUCACW2MM" target="_blank" rel="noopener noreferrer">Guarda le Missioni <span aria-hidden="true">→</span></a></div>
     </section>
   </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner container">
+        <a class="footer-brand" href="../#top" aria-label="Torna alla homepage">
+          <img src="../public/approved/logo-approved.png" alt="CasAvventura" width="157" height="92" loading="lazy" />
+        </a>
+        <nav class="footer-nav" aria-label="Link utili">
+          <a href="../#universo">L’universo</a>
+          <a href="../#missioni">Missioni</a>
+          <a href="../gioca/">Gioca</a>
+          <a href="mailto:casavventura@alessandroveneziani.it">Contatti</a>
+          <a href="mailto:casavventura@alessandroveneziani.it?subject=Informazioni%20Privacy">Privacy</a>
+        </nav>
+        <div class="social-links" aria-label="Social CasAvventura">
+          <a href="https://www.youtube.com/@CasAvventura" aria-label="YouTube CasAvventura" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7.2a2.8 2.8 0 0 0-2-2C17.2 4.7 12 4.7 12 4.7s-5.2 0-7 .5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.5 12 29 29 0 0 0 3 16.8a2.8 2.8 0 0 0 2 2c1.8.5 7 .5 7 .5s5.2 0 7-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .5-4.8 29 29 0 0 0-.5-4.8Z"/><path class="social-fill" d="m10 15.5 5-3.5-5-3.5z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/casavventura.it/" aria-label="Instagram CasAvventura" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="social-dot" cx="17.5" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@casavventura.it" aria-label="TikTok CasAvventura" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3h3.1c.2 1.8 1.2 3.2 3.2 3.8v3.1a9 9 0 0 1-3.2-1.2v6.8a6.2 6.2 0 1 1-6.2-6.2c.5 0 1 .1 1.4.2v3.3a3 3 0 1 0 1.7 2.7V3Z"/></svg>
+          </a>
+        </div>
+        <p class="footer-motto">Più avventure.<br />Ogni giorno. <span aria-hidden="true">♡</span></p>
+      </div>
+    </footer>
 </body>
 </html>
