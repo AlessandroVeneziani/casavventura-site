@@ -2590,8 +2590,8 @@ button:focus-visible {
 .community-ribbon-copy{
   position:relative;
   z-index:2;
-  width:62%;
-  max-width:760px;
+  width:68%;
+  max-width:780px;
   padding-right:18px;
 }
 .community-ribbon .eyebrow{
@@ -2603,7 +2603,7 @@ button:focus-visible {
   margin:0 0 18px;
   color:#fff;
   font-family:var(--font-display);
-  font-size:clamp(2.2rem,4.35vw,4rem);
+  font-size:clamp(2.2rem,4vw,3.75rem);
   font-weight:700;
   line-height:.96;
   letter-spacing:-.055em;
@@ -2611,6 +2611,7 @@ button:focus-visible {
 .community-ribbon h2 span{
   display:block;
   color:#ffb046;
+  white-space:nowrap;
 }
 .community-ribbon-copy>p:not(.eyebrow){
   max-width:650px;
@@ -2663,6 +2664,9 @@ button:focus-visible {
   }
   .community-ribbon-copy{
     width:68%;
+  }
+  .community-ribbon h2 span{
+    white-space:normal;
   }
   .community-ribbon-note{
     right:1.8%;
