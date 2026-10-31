@@ -2809,3 +2809,178 @@ button:focus-visible {
     bottom:152px;
   }
 }
+
+
+/* Community ribbon — layout statico per breakpoint */
+@media (min-width: 1201px) {
+  .community-ribbon-inner {
+    width: min(1280px, calc(100% - 96px));
+    min-height: 390px;
+    margin-inline: auto;
+    display: block;
+    padding: 66px 0 66px;
+  }
+
+  .community-ribbon-copy {
+    width: 780px;
+    max-width: 780px;
+    padding-right: 0;
+  }
+
+  .community-ribbon .eyebrow {
+    margin-bottom: 16px;
+  }
+
+  .community-ribbon h2 {
+    width: 780px;
+    max-width: 780px;
+    margin-bottom: 24px;
+    font-size: 60px;
+    line-height: .98;
+    letter-spacing: -.02em;
+  }
+
+  .community-ribbon h2 span {
+    white-space: nowrap;
+  }
+
+  .community-ribbon-copy > p:not(.eyebrow) {
+    width: 620px;
+    max-width: 620px;
+    margin-bottom: 28px;
+    line-height: 1.5;
+  }
+
+  .community-ribbon:before {
+    width: 310px;
+    height: 310px;
+    right: 3.5%;
+  }
+
+  .community-ribbon-you {
+    width: 218px;
+    height: 218px;
+    right: calc(3.5% + 46px);
+  }
+
+  .community-ribbon-note {
+    right: 0;
+    width: 142px;
+    height: 142px;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 781px) and (max-width: 1200px) {
+  .community-ribbon-inner {
+    min-height: 360px;
+    display: block;
+    padding: 58px 34% 58px 7%;
+  }
+
+  .community-ribbon-copy {
+    width: 100%;
+    max-width: 650px;
+    padding-right: 0;
+  }
+
+  .community-ribbon h2 {
+    width: 100%;
+    max-width: 650px;
+    margin-bottom: 22px;
+    font-size: 46px;
+    line-height: .98;
+    letter-spacing: -.02em;
+  }
+
+  .community-ribbon h2 span {
+    white-space: normal;
+  }
+
+  .community-ribbon-copy > p:not(.eyebrow) {
+    width: 100%;
+    max-width: 560px;
+    margin-bottom: 26px;
+    line-height: 1.48;
+  }
+
+  .community-ribbon:before {
+    width: 260px;
+    height: 260px;
+    right: 5%;
+  }
+
+  .community-ribbon-you {
+    width: 178px;
+    height: 178px;
+    right: calc(5% + 40px);
+  }
+
+  .community-ribbon-note {
+    right: 1.5%;
+    width: 116px;
+    height: 116px;
+    font-size: .86rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .community-ribbon-inner {
+    display: block;
+    min-height: 0;
+    padding: 46px 18px 300px;
+  }
+
+  .community-ribbon-copy {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .community-ribbon h2 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 22px;
+    font-size: 42px;
+    line-height: .98;
+    letter-spacing: -.02em;
+  }
+
+  .community-ribbon h2 span {
+    white-space: normal;
+  }
+
+  .community-ribbon-copy > p:not(.eyebrow) {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+    line-height: 1.48;
+  }
+
+  .community-ribbon:before {
+    width: 230px;
+    height: 230px;
+    right: 50%;
+    top: auto;
+    bottom: 28px;
+    transform: translateX(50%);
+  }
+
+  .community-ribbon-you {
+    width: 158px;
+    height: 158px;
+    right: calc(50% - 79px);
+    top: auto;
+    bottom: 54px;
+    transform: rotate(-2deg);
+  }
+
+  .community-ribbon-note {
+    top: auto;
+    right: calc(50% - 154px);
+    bottom: 150px;
+    width: 104px;
+    height: 104px;
+    font-size: .8rem;
+  }
+}
