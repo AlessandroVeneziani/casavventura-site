@@ -49,7 +49,7 @@
     .club-intro{line-height:1.52}
     .club-door h3,.club-pin h3,.club-pact-item h3{line-height:1.08}
     .club-dance{padding-top:clamp(42px,6vw,76px);padding-bottom:clamp(42px,6vw,76px);background:#fffdf8}
-    .dance-frame{position:relative;min-height:520px;display:grid;grid-template-columns:minmax(300px,.8fr) minmax(420px,1.2fr);align-items:center;overflow:hidden;padding:54px 6%;border:1px solid #d7bd88;border-radius:28px 18px 30px 20px;background:#f7e8c8 url('../public/final-band-clean-bg.png') center/cover no-repeat;box-shadow:inset 0 0 42px rgba(169,117,39,.12),0 14px 28px rgba(74,45,9,.1)}
+    .dance-frame{position:relative;min-height:520px;display:grid;grid-template-columns:minmax(300px,.8fr) minmax(420px,1.2fr);align-items:center;overflow:hidden;padding:54px 6%;border:1px solid #d7bd88;border-radius:28px 18px 30px 20px;background:#f7e8c8 url('../public/patto-casavventura.webp') center/cover no-repeat;box-shadow:inset 0 0 42px rgba(169,117,39,.12),0 14px 28px rgba(74,45,9,.1)}
     .dance-frame:before{content:"";position:absolute;inset:18px;border:2px dashed rgba(6,76,91,.24);border-radius:20px;pointer-events:none}
     .dance-copy{position:relative;z-index:2;max-width:430px;padding:14px 0 14px}
     .dance-copy h2{margin:0 0 18px;color:var(--color-teal-dark);font-family:var(--font-display);font-size:clamp(3rem,5vw,5rem);line-height:.98;letter-spacing:-.018em}
@@ -63,6 +63,14 @@
     @media (min-width:1101px){.club-hero h1{font-size:62px}.club-heading h2{font-size:52px}.club-life h2{font-size:52px}.club-final h2{font-size:56px}}
     @media (min-width:761px) and (max-width:1100px){.club-hero h1{font-size:50px}.club-heading h2{font-size:44px}.club-life h2{font-size:44px}.club-final h2{font-size:48px}.dance-frame{grid-template-columns:1fr 1.2fr;padding-inline:5%}.dance-copy h2{font-size:52px}}
     @media (max-width:760px){.club-hero h1{font-size:42px}.club-heading h2,.club-life h2{font-size:40px}.club-final h2{font-size:42px}.club-dance{padding-top:36px}.dance-frame{display:block;min-height:690px;padding:42px 30px 250px}.dance-copy{max-width:100%}.dance-copy h2{font-size:48px}.dance-copy>p:not(.club-label){font-size:1.02rem}.dance-cast{position:absolute;right:0;bottom:0;width:100%;height:300px;min-height:0}.dance-group{right:-8%;bottom:-8%;width:88%;height:118%}.dance-eugenio{right:1%;bottom:2%;width:34%;max-width:160px}.dance-frame:before{inset:12px}}
+
+
+    /* Balla con noi: pergamena chiara e composizione corale unica */
+    .dance-frame{background-color:#f7e8c8;background-image:url('../public/patto-casavventura.webp');background-size:cover;background-position:center}
+    .dance-cast{display:flex;align-items:flex-end;justify-content:center}
+    .dance-group{position:relative;right:auto;bottom:auto;width:112%;height:auto;max-height:500px;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 15px 18px rgba(10,62,72,.17))}
+    @media (min-width:761px){.dance-copy{padding-left:18px}.dance-cast{min-height:430px}.dance-group{width:116%;max-width:700px}}
+    @media (max-width:760px){.dance-group{width:112%;height:auto;max-height:290px}.dance-cast{display:flex;align-items:flex-end;justify-content:center}}
 
   </style>
 </head>
@@ -144,8 +152,7 @@
             <a class="button button-primary" href="https://www.youtube.com/@CasAvventura/shorts" target="_blank" rel="noopener noreferrer">Guarda il ballo <span aria-hidden="true">→</span></a>
           </div>
           <div class="dance-cast" aria-label="Alex, Eugenio, Bimbi e Jasper ballano insieme">
-            <img class="dance-group" src="../public/hero-casavventura.png" alt="Alex, Bimbi e Jasper a CasAvventura" />
-            <img class="dance-eugenio" src="../public/eugenio-card.webp" alt="Eugenio, il vicino di CasAvventura" />
+            <img class="dance-group" src="../public/hero-i-casavventura.webp" alt="Alex, Eugenio, Bimbi e Jasper a CasAvventura" />
           </div>
         </div>
       </div>
