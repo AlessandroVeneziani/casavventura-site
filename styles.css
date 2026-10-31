@@ -2984,3 +2984,33 @@ button:focus-visible {
     font-size: .8rem;
   }
 }
+
+
+/* Community ribbon — coordinate condivise tra cerchio, Tu e badge */
+@media (min-width: 1201px) {
+  .community-ribbon:before {
+    right: 14%;
+  }
+
+  .community-ribbon-you {
+    right: calc(14% + 56px);
+  }
+
+  .community-ribbon-note {
+    right: 10%;
+  }
+}
+
+@media (min-width: 781px) and (max-width: 1200px) {
+  .community-ribbon:before {
+    right: 8%;
+  }
+
+  .community-ribbon-you {
+    right: calc(8% + 41px);
+  }
+
+  .community-ribbon-note {
+    right: 3%;
+  }
+}
