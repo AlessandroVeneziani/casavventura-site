@@ -72,6 +72,9 @@
     @media (min-width:761px){.dance-copy{padding-left:18px}.dance-cast{min-height:430px}.dance-group{width:116%;max-width:700px}}
     @media (max-width:760px){.dance-group{width:112%;height:auto;max-height:290px}.dance-cast{display:flex;align-items:flex-end;justify-content:center}}
 
+
+    .dance-listen{margin:20px 0 18px;max-width:430px}.dance-listen-label{margin:0 0 7px;color:var(--color-teal-dark);font-family:var(--font-display);font-size:1.05rem;font-weight:700}.dance-listen audio{display:block;width:100%;height:42px;border-radius:999px}.dance-video-link{display:inline-flex;margin-top:12px;color:var(--color-orange);font-family:var(--font-display);font-weight:700;text-decoration:none}.dance-video-link:hover{text-decoration:underline}
+
   </style>
 </head>
 <body class="club-page">
@@ -149,7 +152,14 @@
             <h2>Balla con <span>noi!</span></h2>
             <p>Hai già imparato il ballo di CasAvventura?</p>
             <p class="dance-strong">Se vuoi essere un CasAvventura, balla con noi.</p>
-            <a class="button button-primary" href="https://www.youtube.com/@CasAvventura/shorts" target="_blank" rel="noopener noreferrer">Guarda il ballo <span aria-hidden="true">→</span></a>
+            <div class="dance-listen">
+              <p class="dance-listen-label">Ascolta il brano completo</p>
+              <audio controls preload="none" aria-label="Ascolta Balla con noi — Il Ballo Bau Miao Remix">
+                <source src="https://drive.google.com/uc?export=download&amp;id=1do5rsVQLGS2fezobWGfF1iRrozEJSRZT" type="audio/mpeg" />
+                Il tuo browser non supporta l’audio.
+              </audio>
+            </div>
+            <a class="button button-primary" href="https://youtube.com/shorts/XEsJiqQPjlg?feature=share" target="_blank" rel="noopener noreferrer">Guarda il primo video <span aria-hidden="true">→</span></a>
           </div>
           <div class="dance-cast" aria-label="Alex, Eugenio, Bimbi e Jasper ballano insieme">
             <img class="dance-group" src="../public/hero-i-casavventura.webp" alt="Alex, Eugenio, Bimbi e Jasper a CasAvventura" />
