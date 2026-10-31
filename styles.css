@@ -2558,23 +2558,161 @@ button:focus-visible {
 
 
 /* I CasAvventura — community invitation on the home */
-.community-ribbon{background:linear-gradient(117deg,#0b4b59 0%,#117781 62%,#f29d47 155%);color:#fff;overflow:hidden;position:relative}
-.community-ribbon:before{content:"";position:absolute;width:360px;height:360px;border:2px dashed rgba(255,255,255,.25);border-radius:50%;right:-80px;top:-135px}
-.community-ribbon-inner{min-height:340px;display:flex;align-items:center;justify-content:space-between;gap:48px;padding:62px 10.5%;position:relative}
-.community-ribbon-copy{max-width:690px;position:relative;z-index:1}
-.community-ribbon .eyebrow{color:#ffe081}
-.community-ribbon h2{font-size:clamp(2.1rem,4.4vw,4.05rem);line-height:.95;letter-spacing:-.065em;margin:0 0 17px;color:#fff}
-.community-ribbon h2 span{color:#ffb046}
-.community-ribbon-copy>p:not(.eyebrow){max-width:620px;font-size:1.08rem;line-height:1.48;margin:0 0 24px}
-.community-ribbon-note{flex:0 0 162px;width:162px;height:162px;border-radius:50%;border:3px dashed rgba(255,255,255,.68);background:#fff7dc;color:var(--teal);display:grid;place-items:center;text-align:center;transform:rotate(8deg);box-shadow:0 12px 24px rgba(0,0,0,.16);font-family:var(--brush);font-size:1.2rem;line-height:1.02;position:relative;z-index:1}
-@media (min-width:901px){.main-nav{gap:clamp(13px,1.45vw,26px)}.main-nav a{font-size:clamp(.66rem,.83vw,.78rem)}.header-cta{padding-inline:clamp(12px,1.3vw,19px);font-size:clamp(.66rem,.83vw,.78rem)}}
-@media (max-width:760px){.community-ribbon-inner{padding:54px 0;min-height:0}.community-ribbon-note{display:none}.community-ribbon h2{font-size:2.45rem}.community-ribbon-copy>p:not(.eyebrow){font-size:1rem}}
-
-
-/* Fascia community: il posto è qui e Tu puoi entrarci */
-.community-ribbon-inner{padding-right:min(26%,430px)}
-.community-ribbon:before{width:262px;height:262px;right:16px;top:50%;transform:translateY(-50%);border-color:rgba(255,255,255,.32)}
-.community-ribbon-note{position:absolute;right:clamp(242px,20vw,336px);top:50%;transform:translateY(-50%) rotate(8deg);color:var(--color-orange);font-family:var(--font-display);font-weight:700;letter-spacing:-.02em}
-.community-ribbon-you{position:absolute;z-index:1;right:27px;top:50%;width:205px;height:205px;object-fit:contain;transform:translateY(-50%) rotate(-2deg);filter:drop-shadow(0 10px 16px rgba(0,0,0,.14));pointer-events:none}
-@media (max-width:1100px){.community-ribbon-inner{padding-right:230px}.community-ribbon-you{display:none}.community-ribbon-note{right:28px}}
-@media (max-width:760px){.community-ribbon-inner{padding-right:0}.community-ribbon-you{display:none}}
+.community-ribbon{
+  --circle-size:300px;
+  --circle-right:6.5%;
+  --you-size:205px;
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(117deg,#0b4b59 0%,#117781 62%,#f29d47 155%);
+  color:#fff;
+}
+.community-ribbon:before{
+  content:"";
+  position:absolute;
+  z-index:0;
+  width:var(--circle-size);
+  height:var(--circle-size);
+  right:var(--circle-right);
+  top:50%;
+  border:2px dashed rgba(255,255,255,.34);
+  border-radius:50%;
+  transform:translateY(-50%);
+  pointer-events:none;
+}
+.community-ribbon-inner{
+  min-height:340px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  padding:58px 10.5%;
+}
+.community-ribbon-copy{
+  position:relative;
+  z-index:2;
+  width:62%;
+  max-width:760px;
+  padding-right:18px;
+}
+.community-ribbon .eyebrow{
+  margin-bottom:9px;
+  color:var(--color-orange);
+}
+.community-ribbon h2{
+  max-width:760px;
+  margin:0 0 18px;
+  color:#fff;
+  font-family:var(--font-display);
+  font-size:clamp(2.2rem,4.35vw,4rem);
+  font-weight:700;
+  line-height:.96;
+  letter-spacing:-.055em;
+}
+.community-ribbon h2 span{
+  display:block;
+  color:#ffb046;
+}
+.community-ribbon-copy>p:not(.eyebrow){
+  max-width:650px;
+  margin:0 0 24px;
+  font-size:1.08rem;
+  line-height:1.48;
+}
+.community-ribbon-note{
+  position:absolute;
+  z-index:3;
+  right:1.8%;
+  top:50%;
+  width:132px;
+  height:132px;
+  display:grid;
+  place-items:center;
+  border:0;
+  border-radius:50%;
+  background:#fff7dc;
+  color:var(--color-orange);
+  box-shadow:0 10px 24px rgba(0,0,0,.14);
+  font-family:var(--font-display);
+  font-size:1rem;
+  font-weight:700;
+  line-height:1.02;
+  letter-spacing:-.02em;
+  text-align:center;
+  transform:translateY(-50%) rotate(8deg);
+}
+.community-ribbon-you{
+  position:absolute;
+  z-index:2;
+  right:calc(var(--circle-right) + 47.5px);
+  top:50%;
+  width:var(--you-size);
+  height:var(--you-size);
+  object-fit:contain;
+  transform:translateY(-50%) rotate(-2deg);
+  filter:drop-shadow(0 10px 16px rgba(0,0,0,.14));
+  pointer-events:none;
+}
+@media (max-width:1100px){
+  .community-ribbon{
+    --circle-size:250px;
+    --circle-right:7%;
+    --you-size:170px;
+  }
+  .community-ribbon-inner{
+    padding-right:300px;
+  }
+  .community-ribbon-copy{
+    width:68%;
+  }
+  .community-ribbon-note{
+    right:1.8%;
+    width:112px;
+    height:112px;
+    font-size:.88rem;
+  }
+  .community-ribbon-you{
+    right:calc(var(--circle-right) + 40px);
+  }
+}
+@media (max-width:760px){
+  .community-ribbon{
+    --circle-size:230px;
+    --you-size:158px;
+  }
+  .community-ribbon-inner{
+    min-height:0;
+    display:block;
+    padding:48px 0 278px;
+  }
+  .community-ribbon-copy{
+    width:100%;
+    max-width:none;
+    padding-right:0;
+  }
+  .community-ribbon h2{
+    font-size:clamp(2.35rem,10.5vw,3.1rem);
+  }
+  .community-ribbon-copy>p:not(.eyebrow){
+    font-size:1rem;
+  }
+  .community-ribbon:before{
+    right:50%;
+    top:auto;
+    bottom:28px;
+    transform:translateX(50%);
+  }
+  .community-ribbon-you{
+    right:calc(50% - 79px);
+    top:auto;
+    bottom:52px;
+    transform:rotate(-2deg);
+  }
+  .community-ribbon-note{
+    top:auto;
+    right:calc(50% - 154px);
+    bottom:145px;
+    width:104px;
+    height:104px;
+    font-size:.8rem;
+  }
+}
